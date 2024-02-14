@@ -1,0 +1,54 @@
+---
+title: "Research Group Members"
+output:
+  html_document:
+    toc: true
+    code_folding: true
+    embed_resources: false
+---
+
+## Current and former group members
+
+### Group members
+
+- Alex Sanchez (Group Leader. Prof. Catedràtic U.)
+
+- Ferran Reverter (Prof. Agregat)
+
+- Esteban Vegas (Prof Titular U.)
+
+- Antonio Miñarro (Prof Titular U.)
+
+- Francesc Carmona (Prof. Titular U.)
+
+- Marta Cubedo (Prof Titular U.)
+
+### External collaborators
+
+- Anna Guadall PhD. (Nutrimetabolomics research group, UB)
+
+- Berta Miró Ph.D (Vall d'Hebron Institut de Recerca)
+
+### Ph. D. Students
+
+- Ferran Briansó
+
+- Angel Blanco
+
+- Pablo Flores
+
+### Former Group members
+
+- Pol Castellano (currently at Duke University)
+
+- Josep Lluis Mosquera 
+
+## Gallery
+
+```{r echo=FALSE, fig.align='center', fig.cap='Our group in 2018'}
+knitr::include_graphics("images/FotoEstBioinfo-2018-3.jpg")
+```
+
+```{r echo=FALSE, fig.align='center', , fig.cap='Our group in 2011'}
+knitr::include_graphics("images/Diapositiva1.PNG")
+```

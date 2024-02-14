@@ -1,0 +1,19 @@
+# Software
+
+## R packages, web applications and other software products
+
+As part of our research we develop distinct type of applications, most of them using R. These can be accessed through our personal github sites and also as public shiny applications that we provide through the GrBio web server
+
+### **Software in github**
+
+-   [Alex Sánchez github site](https://github.com/alexsanchezpla/)
+
+-   Estbioinfo github
+
+### **Shiny Applications**
+
+-   [Lheuristic](http://cinna.upc.edu:3838/alex/Lheuristic/)
+
+-   [kernelPCA](http://cinna.upc.edu:3838/evegas/kernelPCA/)
+
+-   [testrapptio](http://cinna.upc.edu:3838/sergicivit/testrapptio)

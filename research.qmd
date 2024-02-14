@@ -1,0 +1,245 @@
+# Research
+
+## Current and past Projects
+
+### **Statistical methodologies for clinical and omics data and their applications in health sciences (SAMANTHA)**
+
+**Tipus de contracte/Programa:** RSOC - Programa estatal de I+D+i orientada a los retos de la sociedad.
+
+**Empresa/Administració finançadora:** MCNN - Ministerio de Ciencia e Innovación
+
+**Entitats participants:** ---
+
+**Número de projecte/contracte:** PID2019-104830RB-I00 **Import (despeses indirectes incloses):** 160.809,00 **Durada, des de:** 2020 **fins:** 2024
+
+**Investigador/s responsable/s:** Alexandre Sánchez Pla i Guadalupe Gómez Melis
+
+**Nombre d'investigadors participants:** 15
+
+**Paraules Clau:**
+
+**Codi de projecte/contracte:** 117371 **Ordre:** 003
+
+--------------------------------------
+
+### **Food bioactive compounds and prostate cancer risk in the European Prospective Investigation into Cancer and Nutrition (EPIC) study. Scientific bases for future dietary recommendations.**
+
+**Tipus de contracte/Programa:**
+
+**Empresa/Administració finançadora:** FMTV - Fundació La Marató de TV3
+
+**Entitats participants:** ---
+
+**Número de projecte/contracte:** 553/C/2019 **Import (despeses indirectes incloses):** 181.250,00 **Durada, des de:** 2020 **fins:** 2022
+
+**Investigador/s responsable/s:** Raúl Zamora Ros, Maria Cristina Andres Lacueva
+
+**Nombre d'investigadors participants:** 11
+
+**Paraules Clau:**
+
+**Codi de projecte/contracte:** 117591 **Ordre:** 004
+
+--------------------------------------	 	
+
+### **Valorización de EGA para la Industria y la Sociedad.(VEIS)**
+
+**Tipus de contracte/Programa:**
+
+**Empresa/Administració finançadora:** 05262 - FEDER
+
+**Entitats participants:** GENE - Generalitat de Catalunya
+
+**Número de projecte/contracte:** 001-P-001647 **Import (despeses indirectes incloses):** 195.142.938,00 **Durada, des de:** 2019 **fins:** 2021
+
+**Investigador/s responsable/s:** Arcadi Navarro
+
+**Nombre d'investigadors participants:** ---
+
+**Paraules Clau:**
+
+**Codi de projecte/contracte:** 117369 **Ordre:** 007
+
+------------------------------------------- 	
+
+### **Patient Centric Clinical Trial Plattform (EU-PEARL)**
+
+**Tipus de contracte/Programa:** 8JTIIMI - HORIZON 2020. JTI INNOVATIVE MEDICINES INITIATIVE (JTI-IMI).
+
+**Empresa/Administració finançadora:** 18599 - Comunitat Europea Projecte H2020 (Horizon 2020)
+
+**Entitats participants:** ---
+
+**Número de projecte/contracte:** 853966 **Import (despeses indirectes incloses):** 120.049.525,00 **Durada, des de:** 2019 **fins:** 2023
+
+**Investigador/s responsable/s:** Joan Genescà
+
+**Nombre d'investigadors participants:** ---
+
+**Paraules Clau:**
+
+**Codi de projecte/contracte:** 117370 **Ordre:** 008
+
+--------------------------------------------
+
+### **EOSC-Life: Providing an open collaborative space for digital biology in Europe**
+
+**Tipus de contracte/Programa:**
+
+**Empresa/Administració finançadora:** 21751 - European Unions Horizon 2020 research programme
+
+**Entitats participants:** ---
+
+**Número de projecte/contracte:** 824087 **Import (despeses indirectes incloses):** 23.700.000,00 **Durada, des de:** 2019 **fins:** 2023
+
+**Investigador/s responsable/s:** Niklas Blomberg
+
+**Nombre d'investigadors participants:** ---
+
+**Paraules Clau:**
+
+**Codi de projecte/contracte:** 117372 **Ordre:** 009
+
+----------------------------------------
+
+### **2017 SGR 622: Grup de recerca en Bioestadística i Bioinformàtica (GRBIO)**
+
+**Tipus de contracte/Programa:** SGRC - Ajuts de Suport als Grups de Recerca de Catalunya (SGR)
+
+**Empresa/Administració finançadora:** AGAU - Agència de Gestió d'Ajuts Universitaris i de Recerca (AGAUR)
+
+**Entitats participants:** ---
+
+**Número de projecte/contracte:** 2017SGR622 **Import (despeses indirectes incloses):** 20.000,00 **Durada, des de:** 2017 **fins:** 2021
+
+**Investigador/s responsable/s:** Guadalupe Gomez Melis
+
+**Nombre d'investigadors participants:** 24
+
+**Paraules Clau:** 003657 - Bioinformática / 033823 - Anàlisi multivariant / 037183 - Survival analysis / 018206 - Simulation / 044864 - Anàlis de dades òmiques / 058554 - ANALISI INTEGRATIV / 048652 - aplicacions en web / 235940 - clinical trials / 009996 - Bioequivalencia
+
+**Codi de projecte/contracte:** 106261 **Ordre:** 016
+
+-------------------
+
+### **2014 SGR 464: Grup de recerca en bioestadística i bioinformàtica (GRBIO)**
+
+**Grup Consolidat:** 2014 SGR 464 (Generalitat de Catalunya).
+
+**Finançat per:** Generalitat de Catalunya.
+
+**Període:** 01/01/2014 - 31/12/2016.
+
+**Investigadora Principal:** Dra. Guadalupe Gómez Melis.
+
+**Membres:** 26.
+
+Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmona Pontaque, Francisco de Asís; Civit Vives, Sergi; Cobo Valeri, Erik; Cortes Martinez, Jordi; Fontiana Gregori, Josep; Gomez Melis, Guadalupe; Gómez Mateu, Moisés; Julià de Ferran, Olga; Langohr, Klaus; Miñarro Alonso, Antonio; Monleón Getino, Antonio; Mosquera Mayo, José Luis; Ocaña Rebull, Jordi; Oliva Cuyàs, Francesc; Oller Sala, Josep Maria; Pedro Puente, Xavier de; Perez Alvarez, Nuria; Pérez Royos, Santiago; Ríos Alcolea, Martín; Salicrú Pagés, Miguel; Serrat Pie, Carles; Sánchez Pla, Àlex; Vegas Lozano, Esteban.
+
+**Quantitat atorgada:** 63.000 €.
+
+--------------------------------
+
+### **MTM2015-64465-C2-1-R: Statistical methods for clinical trials, complex censoring schemes and integrative omics data analysis**
+
+**Títol:** Statistical methods for clinical trials, complex censoring schemes and integrative omics data analysis
+
+**Finançat per:** Ministerio de Economía y Competitividad.
+
+**Període:** 01/01/2016 - 31/12/2019.
+
+**Investigadora Principal:** Dra. Guadalupe Gómez Melis.
+
+**Membres equip d'Investigació:** Guadalupe Gómez, Alex Sánchez, Erik Cobo, Olga Julià, Klaus Langohr, Jordi Ocaña, Josep M. Oller, Nuria Pérez, Carles Serrat, Esteban Vegas.
+
+**Membres equip de Treball:** KyungMann Kim, Urania Dafni, Guillermo Hough, Mireia Besalú,Moisés Gómez-Mateu, Oleguer Plana-Ripoll, Ferran Briansó, Vicenç Gibert, Marta Bofill, Eduard Molins, Carolina Barroeta, Jordi Cortés
+
+**Quantitat atorgada:** 211.100 €.
+
+### **PCIN-2017-076: INTIMIC**
+
+**Títol**: Metabotipos basados en la dieta y el microbioma para determinar el riesgo cardiometabólico y adaptar estrategias de intervención para mejorar la salud (INTIMIC)
+
+**Investigador/a principal**: Cristina Andres Lacueva
+
+**Investigadors del GRBIO**: Alex Sanchez, Esteban Vegas
+
+**Referència**: PCIN-2017-076
+
+**Organisme finançador**: MINECO
+
+**Total atorgat:** 150.000,00 euros
+
+**Període**: 01/12/2017 - 30/11/2020
+
+### **PCIN-2015-238: MaPLE**
+
+**Títol**: Microbioma sanguíneo e intestinal para el estudio del efecto de un patrón dietético rico en polifenoles sobre la permeabilidad intestinal de ancianos (MaPLE)
+
+**Investigador/a principal**: Cristina Andrés Lacueva
+
+**Investigadors dintre del GRBIO**: Alex Sanchez, Esteban Vegas
+
+**Referència**: PCIN-2015-238
+
+**Organisme finançador**: MINECO
+
+**Total atorgat**: 118.000,00 euros
+
+**Període**: 03/01/2016 - 31/12/2018
+
+### **PCIN-2015-229: NUTRICOG**
+
+**Títol:** Identificación de moduladores dietéticos del envejecimiento cognitivo y plasticidad cerebral, y evidencia del concepto de eficacia en la prevención/reversión del declive cognitivo
+
+**Finançat per**: Ministerio de economía y competitividad
+
+**Referència**: PCIN-2015-229
+
+**Investigadora Principal**: Merce Pallàs Lliberia.
+
+**Participant:** Alex Sánchez, Francesc Carmona
+
+**Total atorgat:** 122.000,00 euros
+
+**Període**: 03/01/2016 - 31/12/2018.
+
+### **EIT/HEALTH/SGA2016/01: COOK2HEALTH**
+
+**Finançat per:** EUUN Unió Europea.
+
+**Institució:** UB.
+
+**Període:** 01/01/2016 - 31/12/2016.
+
+**Programa:** 8EIT HORIZON 2020. EIT. European Institute of Innovation and Technology.
+
+**Codi EU:** EIT/HEALTH/SGA2016/01.
+
+**Tipologia:** 8PM KIC Health.
+
+**Investigadora Principal:** Ma. Cristina Andres Lacueva.
+
+**Participant:** Alex Sánchez, Esteban Vegas, Francesc Carmona, Antoni Miñarro
+
+### **MTM2015-69068-REDT: BIOSTATNET**
+
+**Descripció**: Xarxa Nacional de Bioestadística (BIOSTATNET) creada en el marc del Programa Estatal de Investigación Científica y Técnica de Excelencia, Subprograma Estatal de Generación de Conocimiento del Ministerio de Economia y Competitividad
+
+**Investigadora principal**: Dra. Carmen María Cadarso Suárez.
+
+**Investigadora Responsable del Node Catalunya - BIO**: Dra. Lupe Gómez
+
+**Referencia**: MTM2015-69068-REDT. 
+
+**Periode**: Gener 2016 - Desembre 2017.
+
+### Related Research Groups
+
+Our group interacts in different ways with other research groups. While we are not a "Consolidated Research Group" of the Generalitat de Catalunya, we work with two of them.
+
+-   Some of our members belong to GRBio, [Grup de Recerca en Bioestadística i Bioinformàtica](http://grbio.upc.edu), a consolidated research group of the Generalitat de Catalunya, with whom we share orientations and research interests.
+
+-   Others are members of the [Biomarkers in Nutrition and Metabolomic Research Group](http://nutrimetabolomics.com) with whom we work together in a variety of projects in the interface between metabolomics, and nutrition.
+
+Besides this, we have a kind relation with the [Statistics and Bioinformatics Unit (UEB)](http://ueb.vhir.org) in [Vall d'Hebron Research Institute (VHIR)](http://www.vhir.org), which we contributed to create and which was led by Alex Sanchez for more than 12 years (2008-2020).

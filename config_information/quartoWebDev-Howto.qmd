@@ -1,0 +1,109 @@
+---
+title: "Notes sobre el desenvolupament de la Web"
+author: "Alex Sánchez Pla"
+editor: visual
+---
+
+# Introducció
+
+Aquestes notes descrieun el procés pas a pas per crear una webper al grup de recerca EstBioinfo i publicar-la al domini <http://www.ub.edu/estbioinfo>.
+
+El procés s'ha fet amb Quarto 1.4 i seguint les indicacions de diveros manuals oficials de Quarto
+
+# Creació del projecte
+
+Per començar hem creat un projecte tipus "Web Site" seguint les indicacions de: <https://quarto.org/docs/websites/>.
+
+Això ha creat un document "index.qmd" que conté l'esquelet de la web. Si el *renderitzem* veurem l'aspecte de partida.
+
+# Estructura de la web
+
+Moltes webs tenen una pàgina principal (home) que adreça a les distintes pàgines de que consta el lloc. 
+
+Per tal de dotar la web d'aquesta estructura fem el següent:
+
+- Creem cada pàgina per separat en un arxiu .qmd
+
+```{r eval=FALSE}
+    index.qmd    
+    about.qmd       
+    contact.qmd  
+    members.qmd       
+    software.qmd
+    activities.qmd  
+    publications.qmd  
+    research.qmd            
+    training.qmd
+```
+
+Cada arxiu té la mateixa estructura bàsica, per exemple `members.qmd`:
+
+```{r eval=FALSE}
+
+    # Members
+    ## Current and former group members
+    <!-- Incluir información sobre miembros presentes y catuales -->
+      
+```
+
+- L'arxiu `index.qmd` pot ser diferent ja que fara de "home page"
+
+```{r eval=FALSE}
+
+    ---
+    title: "Statistics and Bioinformatics Research Group"
+    output:
+      html_document:
+        toc: true
+        code_folding: true
+    ---
+
+    This is the home page of the Statistics and Bioinformatics Research Group
+
+```
+
+L'estructura de la web  a l'arxiu `_quarto.yaml` es defineix de la forma següent:
+    
+```{r eval=FALSE}
+project:
+  type: website
+
+website:
+  title: "EstBioInfo"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: members.qmd
+        text: Members
+      - href: training.qmd
+        text: Teaching
+      - href: software.qmd
+        text: Sofwtare
+      - href: activities.qmd
+        text: Activities
+      - href: contact.qmd
+        text: Contact
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+
+Observem com `index.qmd` fa de *home page* perquè és el primer que apareix.
+
+
+# Creació dels arxius del lloc web
+
+Amb aquesta estructura fet podem compilar-ho tot de cop amb la instrucció `quarto preview eibwebsite` que executarem des de la terminal situant-nos al directori quye conté el directori del projecte.
+
+Això crearà un subirectori `_site` que conté tots els arxius necessaris per penjar la web al lloc on s'allotjarà.
+

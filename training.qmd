@@ -1,0 +1,26 @@
+# Training
+## Current and past training activities
+<!-- Incluir información sobre cursos que se ofrecen actualmente o los que se han impartido -->
+
+
+### 2020
+
+- Web Scraping for socioeconomic development using R
+
+- Deep learning using R
+
+### 2019
+
+- Data Management Programing and Graphics with R
+
+- Data Analysis and Experimental Design with R
+
+- Web scrapping: Getting data from the web with R
+
+### Before 2018
+
+- RNA-seq data analysis (2 day course, taught at the Statistics Department, University of Sevilla)
+
+- Introduction to Bioinformatics (4 days course, taught at the Institut de Ciències del Mar, in Blanes)
+
+- Integrative Omics Data Analysis (1 day course, taught at the Statistics Department, University of Sevilla)

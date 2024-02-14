@@ -1,0 +1,17 @@
+# About us
+
+## Mision, Vision, Values and History
+
+The Statistics and Bioinformatics Research Group has as its main objective the research, development and application of statistical methods in problems arising in the interface between bioinformatics and statistics.
+
+Our initial interest was the analysis of "single-omics" data such as expression microarrays. Later we have evolved to be interested in problems and methods for the integrative analysis of the omics data. We are currently collaborating on various projects of this kind in fields such as neuroscience, immunology or metabolomics.
+
+### Associated Research Groups
+
+Our group interacts in different ways with other research groups. While we are not a "Consolidated Research Group" of the Generalitat de Catalunya, we work with two of them.
+
+-   Some of our members belong to GRBio, [Grup de Recerca en Bioestadística i Bioinformàtica](http://grbio.upc.edu), a consolidated research group of the Generalitat de Catalunya, with whom we share orientations and research interests.
+
+-   Others are members of the [Biomarkers in Nutrition and Metabolomic Research Group](http://nutrimetabolomics.com) with whom we work together in a variety of projects in the interface between metabolomics, and nutrition.
+
+Besides this, we have a kind relation with the [Statistics and Bioinformatics Unit (UEB)](http://ueb.vhir.org) in [Vall d'Hebron Research Institute (VHIR)](http://www.vhir.org), which we contributed to create and which was led by Alex Sanchez for more than 12 years (2008-2020).
