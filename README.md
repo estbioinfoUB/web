@@ -1,4 +1,4 @@
-# web
+# Statistics and Bioinformatics Research Group Web Site
 
 This repository contains the files used to create and maintain EstBioinfo Research ghroups website.
 
