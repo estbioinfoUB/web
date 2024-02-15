@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "EstBioInfo"
@@ -23,6 +24,7 @@ website:
         text: Activities
       - href: contact.qmd
         text: Contact
+        
   # sidebar:
   #   background: primary
   #   style: docked
