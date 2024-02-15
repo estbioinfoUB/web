@@ -10,19 +10,44 @@ Aquestes notes descrieun el procés pas a pas per crear una webper al grup de re
 
 El procés s'ha fet amb Quarto 1.4 i seguint les indicacions de diveros manuals oficials de Quarto
 
-# Creació del projecte
+# Creació de la web
+
+## 1. Creació del projecte
 
 Per començar hem creat un projecte tipus "Web Site" seguint les indicacions de: <https://quarto.org/docs/websites/>.
 
-Això ha creat un document "index.qmd" que conté l'esquelet de la web. Si el *renderitzem* veurem l'aspecte de partida.
+Això ha creat dos documents
 
-# Estructura de la web
+-   Un document "index.qmd" que conté l'esquelet de la web. Si el *renderitzem* veurem l'aspecte de partida.
 
-Moltes webs tenen una pàgina principal (home) que adreça a les distintes pàgines de que consta el lloc. 
+-   Un document `_quarto.yaml` que és on es defineixen les característiques de la web. Aquest és el document que hem d'aprendre a configurar per definir com funciona la web que creem.
+
+```{r eval=FALSE}
+project:
+  type: website
+
+website:
+  title: "webEstbioinfo"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+```
+
+## 2. Estructurar la web
+
+Moltes webs tenen una pàgina principal (home) que adreça a les distintes pàgines de que consta el lloc.
 
 Per tal de dotar la web d'aquesta estructura fem el següent:
 
-- Creem cada pàgina per separat en un arxiu .qmd
+-   Creem cada pàgina per separat en un arxiu .qmd
 
 ```{r eval=FALSE}
     index.qmd    
@@ -46,7 +71,7 @@ Cada arxiu té la mateixa estructura bàsica, per exemple `members.qmd`:
       
 ```
 
-- L'arxiu `index.qmd` pot ser diferent ja que fara de "home page"
+-   L'arxiu `index.qmd` pot ser diferent ja que fara de "home page"
 
 ```{r eval=FALSE}
 
@@ -62,11 +87,12 @@ Cada arxiu té la mateixa estructura bàsica, per exemple `members.qmd`:
 
 ```
 
-L'estructura de la web  a l'arxiu `_quarto.yaml` es defineix de la forma següent:
-    
+L'estructura de la web es defineix *modificant l'arxiu `quarto.yaml`* de la forma següent:
+
 ```{r eval=FALSE}
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "EstBioInfo"
@@ -100,10 +126,48 @@ format:
 
 Observem com `index.qmd` fa de *home page* perquè és el primer que apareix.
 
+## 3. Creació dels arxius del lloc web
 
-# Creació dels arxius del lloc web
+Amb aquesta estructura fet podem compilar-ho tot de cop amb la instrucció:
 
-Amb aquesta estructura fet podem compilar-ho tot de cop amb la instrucció `quarto preview eibwebsite` que executarem des de la terminal situant-nos al directori quye conté el directori del projecte.
+`quarto render webEstbioinfo`
+
+que executarem
+
+-   des de la terminal
+
+-   situant-nos al directori superior del que conté el projecte.
 
 Això crearà un subirectori `_site` que conté tots els arxius necessaris per penjar la web al lloc on s'allotjarà.
 
+A mida que anem treballant cada cop que modifiquem un arxiu de la web es recompila per actualitzar-se. També podem forçar-ho fent:
+
+`quarto preview webEstbioinfo`
+
+que actualitza només els darrers arxius canviats.
+
+### Alguns problemes detectats
+
+-   Sovint el "preview" d'un arxiu "arxiu.qmd" crea una carpeta "arxiu_files" que impedeix que el procés conclogui i dóna el següent error:
+
+    `WARNING: Error removing file C:\Users\Usuario\...\webEstbioinfo.quarto_freeze\site_libs\quarto-html: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (os error 32): remove 'C:\Users\Usuario\...\webEstbioinfo.quarto_freeze\site_libs\quarto-html' Output created: _site\ARXIU.html`
+
+    Esborrant la carpeta (i potser repetint-ho varis cops) sol resoldre el problema.
+
+## 4. Publicació de la web
+
+La web que hem creat així es pot publicar a diversos llocs
+
+-   A `quartopub.com` un servei d'allotjament creat i mantingut per \`quarto.
+
+-   A `github` mitjançant github pages
+
+-   A un servei de *hosting* propi, per exemple `www.ub.edu/estbioinfo` pujant-hi tots els arxius generats al "output-directory"
+
+## 5. Refinament del lloc web
+
+La web creada així es pot refinar força.
+
+-   Fent servir estils css
+
+-   Amb les opcions de quarto descrites a \[<https://quarto.org/docs/reference/projects/websites.html>\](<https://quarto.org/docs/reference/projects/websites.html>)

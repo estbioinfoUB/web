@@ -176,9 +176,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introducció" id="toc-introducció" class="nav-link active" data-scroll-target="#introducció">Introducció</a></li>
-  <li><a href="#creació-del-projecte" id="toc-creació-del-projecte" class="nav-link" data-scroll-target="#creació-del-projecte">Creació del projecte</a></li>
-  <li><a href="#estructura-de-la-web" id="toc-estructura-de-la-web" class="nav-link" data-scroll-target="#estructura-de-la-web">Estructura de la web</a></li>
-  <li><a href="#creació-dels-arxius-del-lloc-web" id="toc-creació-dels-arxius-del-lloc-web" class="nav-link" data-scroll-target="#creació-dels-arxius-del-lloc-web">Creació dels arxius del lloc web</a></li>
+  <li><a href="#creació-de-la-web" id="toc-creació-de-la-web" class="nav-link" data-scroll-target="#creació-de-la-web">Creació de la web</a>
+  <ul class="collapse">
+  <li><a href="#creació-del-projecte" id="toc-creació-del-projecte" class="nav-link" data-scroll-target="#creació-del-projecte">1. Creació del projecte</a></li>
+  <li><a href="#estructurar-la-web" id="toc-estructurar-la-web" class="nav-link" data-scroll-target="#estructurar-la-web">2. Estructurar la web</a></li>
+  <li><a href="#creació-dels-arxius-del-lloc-web" id="toc-creació-dels-arxius-del-lloc-web" class="nav-link" data-scroll-target="#creació-dels-arxius-del-lloc-web">3. Creació dels arxius del lloc web</a>
+  <ul class="collapse">
+  <li><a href="#alguns-problemes-detectats" id="toc-alguns-problemes-detectats" class="nav-link" data-scroll-target="#alguns-problemes-detectats">Alguns problemes detectats</a></li>
+  </ul></li>
+  <li><a href="#publicació-de-la-web" id="toc-publicació-de-la-web" class="nav-link" data-scroll-target="#publicació-de-la-web">4. Publicació de la web</a></li>
+  <li><a href="#refinament-del-lloc-web" id="toc-refinament-del-lloc-web" class="nav-link" data-scroll-target="#refinament-del-lloc-web">5. Refinament del lloc web</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -215,91 +223,150 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Aquestes notes descrieun el procés pas a pas per crear una webper al grup de recerca EstBioinfo i publicar-la al domini <a href="http://www.ub.edu/estbioinfo" class="uri">http://www.ub.edu/estbioinfo</a>.</p>
 <p>El procés s’ha fet amb Quarto 1.4 i seguint les indicacions de diveros manuals oficials de Quarto</p>
 </section>
-<section id="creació-del-projecte" class="level1">
-<h1>Creació del projecte</h1>
+<section id="creació-de-la-web" class="level1">
+<h1>Creació de la web</h1>
+<section id="creació-del-projecte" class="level2">
+<h2 class="anchored" data-anchor-id="creació-del-projecte">1. Creació del projecte</h2>
 <p>Per començar hem creat un projecte tipus “Web Site” seguint les indicacions de: <a href="https://quarto.org/docs/websites/" class="uri">https://quarto.org/docs/websites/</a>.</p>
-<p>Això ha creat un document “index.qmd” que conté l’esquelet de la web. Si el <em>renderitzem</em> veurem l’aspecte de partida.</p>
+<p>Això ha creat dos documents</p>
+<ul>
+<li><p>Un document “index.qmd” que conté l’esquelet de la web. Si el <em>renderitzem</em> veurem l’aspecte de partida.</p></li>
+<li><p>Un document <code>_quarto.yaml</code> que és on es defineixen les característiques de la web. Aquest és el document que hem d’aprendre a configurar per definir com funciona la web que creem.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"webEstbioinfo"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  navbar<span class="sc">:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="estructura-de-la-web" class="level1">
-<h1>Estructura de la web</h1>
+<section id="estructurar-la-web" class="level2">
+<h2 class="anchored" data-anchor-id="estructurar-la-web">2. Estructurar la web</h2>
 <p>Moltes webs tenen una pàgina principal (home) que adreça a les distintes pàgines de que consta el lloc.</p>
 <p>Per tal de dotar la web d’aquesta estructura fem el següent:</p>
 <ul>
 <li>Creem cada pàgina per separat en un arxiu .qmd</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    index.qmd    </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    about.qmd       </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    contact.qmd  </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    members.qmd       </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    software.qmd</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    activities.qmd  </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    publications.qmd  </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    research.qmd            </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    training.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    index.qmd    </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    about.qmd       </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    contact.qmd  </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    members.qmd       </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    software.qmd</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    activities.qmd  </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    publications.qmd  </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    research.qmd            </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    training.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Cada arxiu té la mateixa estructura bàsica, per exemple <code>members.qmd</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Members</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="do">## Current and former group members</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="sc">&lt;!--</span> Incluir información sobre miembros presentes y catuales <span class="sc">-</span><span class="ot">-&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Members</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="do">## Current and former group members</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="sc">&lt;!--</span> Incluir información sobre miembros presentes y catuales <span class="sc">-</span><span class="ot">-&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>L’arxiu <code>index.qmd</code> pot ser diferent ja que fara de “home page”</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="sc">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    title<span class="sc">:</span> <span class="st">"Statistics and Bioinformatics Research Group"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    output<span class="sc">:</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>      html_document<span class="sc">:</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        toc<span class="sc">:</span> true</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        code_folding<span class="sc">:</span> true</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="sc">---</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    This is the home page of the Statistics and Bioinformatics Research Group</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    <span class="sc">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    title<span class="sc">:</span> <span class="st">"Statistics and Bioinformatics Research Group"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    output<span class="sc">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>      html_document<span class="sc">:</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        toc<span class="sc">:</span> true</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        code_folding<span class="sc">:</span> true</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="sc">---</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    This is the home page of the Statistics and Bioinformatics Research Group</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>L’estructura de la web a l’arxiu <code>_quarto.yaml</code> es defineix de la forma següent:</p>
+<p>L’estructura de la web es defineix <em>modificant l’arxiu <code>quarto.yaml</code></em> de la forma següent:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"EstBioInfo"</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  navbar<span class="sc">:</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> about.qmd</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> About</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> research.qmd</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Research</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> publications.qmd</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Publications</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> members.qmd</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Members</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> training.qmd</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Teaching</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> software.qmd</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Sofwtare</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> activities.qmd</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Activities</span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> contact.qmd</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Contact</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> _site</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"EstBioInfo"</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  navbar<span class="sc">:</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> about.qmd</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> About</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> research.qmd</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Research</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> publications.qmd</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Publications</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> members.qmd</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Members</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> training.qmd</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Teaching</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> software.qmd</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Sofwtare</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> activities.qmd</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Activities</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> contact.qmd</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Contact</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Observem com <code>index.qmd</code> fa de <em>home page</em> perquè és el primer que apareix.</p>
 </section>
-<section id="creació-dels-arxius-del-lloc-web" class="level1">
-<h1>Creació dels arxius del lloc web</h1>
-<p>Amb aquesta estructura fet podem compilar-ho tot de cop amb la instrucció <code>quarto preview eibwebsite</code> que executarem des de la terminal situant-nos al directori quye conté el directori del projecte.</p>
+<section id="creació-dels-arxius-del-lloc-web" class="level2">
+<h2 class="anchored" data-anchor-id="creació-dels-arxius-del-lloc-web">3. Creació dels arxius del lloc web</h2>
+<p>Amb aquesta estructura fet podem compilar-ho tot de cop amb la instrucció:</p>
+<p><code>quarto render webEstbioinfo</code></p>
+<p>que executarem</p>
+<ul>
+<li><p>des de la terminal</p></li>
+<li><p>situant-nos al directori superior del que conté el projecte.</p></li>
+</ul>
 <p>Això crearà un subirectori <code>_site</code> que conté tots els arxius necessaris per penjar la web al lloc on s’allotjarà.</p>
+<p>A mida que anem treballant cada cop que modifiquem un arxiu de la web es recompila per actualitzar-se. També podem forçar-ho fent:</p>
+<p><code>quarto preview webEstbioinfo</code></p>
+<p>que actualitza només els darrers arxius canviats.</p>
+<section id="alguns-problemes-detectats" class="level3">
+<h3 class="anchored" data-anchor-id="alguns-problemes-detectats">Alguns problemes detectats</h3>
+<ul>
+<li><p>Sovint el “preview” d’un arxiu “arxiu.qmd” crea una carpeta “arxiu_files” que impedeix que el procés conclogui i dóna el següent error:</p>
+<p><code>WARNING: Error removing file C:\Users\Usuario\...\webEstbioinfo.quarto_freeze\site_libs\quarto-html: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (os error 32): remove 'C:\Users\Usuario\...\webEstbioinfo.quarto_freeze\site_libs\quarto-html' Output created: _site\ARXIU.html</code></p>
+<p>Esborrant la carpeta (i potser repetint-ho varis cops) sol resoldre el problema.</p></li>
+</ul>
+</section>
+</section>
+<section id="publicació-de-la-web" class="level2">
+<h2 class="anchored" data-anchor-id="publicació-de-la-web">4. Publicació de la web</h2>
+<p>La web que hem creat així es pot publicar a diversos llocs</p>
+<ul>
+<li><p>A <code>quartopub.com</code> un servei d’allotjament creat i mantingut per `quarto.</p></li>
+<li><p>A <code>github</code> mitjançant github pages</p></li>
+<li><p>A un servei de <em>hosting</em> propi, per exemple <code>www.ub.edu/estbioinfo</code> pujant-hi tots els arxius generats al “output-directory”</p></li>
+</ul>
+</section>
+<section id="refinament-del-lloc-web" class="level2">
+<h2 class="anchored" data-anchor-id="refinament-del-lloc-web">5. Refinament del lloc web</h2>
+<p>La web creada així es pot refinar força.</p>
+<ul>
+<li><p>Fent servir estils css</p></li>
+<li><p>Amb les opcions de quarto descrites a [<a href="https://quarto.org/docs/reference/projects/websites.html" class="uri">https://quarto.org/docs/reference/projects/websites.html</a>](<a href="https://quarto.org/docs/reference/projects/websites.html" class="uri">https://quarto.org/docs/reference/projects/websites.html</a>)</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -7,11 +7,18 @@
     "text": "Course information\nCourse materials\n\n\n\n\n\n\n\n\nWeb Scraping for socioeconomic development using R\n\n\n\n\n\nDeep learning using R\n\n\n\n\n\nData Management Programing and Graphics with R\nData Analysis and Experimental Design with R\nWeb scrapping: Getting data from the web with R\n\n\n\n\n\nRNA-seq data analysis (2 day course, taught at the Statistics Department, University of Sevilla)\nIntroduction to Bioinformatics (4 days course, taught at the Institut de Ciències del Mar, in Blanes)\nIntegrative Omics Data Analysis (1 day course, taught at the Statistics Department, University of Sevilla)"
   },
   {
-    "objectID": "training.html#current-and-past-training-activities",
-    "href": "training.html#current-and-past-training-activities",
+    "objectID": "training.html#current-corses",
+    "href": "training.html#current-corses",
     "title": "Training",
     "section": "",
-    "text": "Web Scraping for socioeconomic development using R\nDeep learning using R\n\n\n\n\n\nData Management Programing and Graphics with R\nData Analysis and Experimental Design with R\nWeb scrapping: Getting data from the web with R\n\n\n\n\n\nRNA-seq data analysis (2 day course, taught at the Statistics Department, University of Sevilla)\nIntroduction to Bioinformatics (4 days course, taught at the Institut de Ciències del Mar, in Blanes)\nIntegrative Omics Data Analysis (1 day course, taught at the Statistics Department, University of Sevilla)"
+    "text": "Course information\nCourse materials"
+  },
+  {
+    "objectID": "training.html#past-courses",
+    "href": "training.html#past-courses",
+    "title": "Training",
+    "section": "",
+    "text": "Web Scraping for socioeconomic development using R\n\n\n\n\n\nDeep learning using R\n\n\n\n\n\nData Management Programing and Graphics with R\nData Analysis and Experimental Design with R\nWeb scrapping: Getting data from the web with R\n\n\n\n\n\nRNA-seq data analysis (2 day course, taught at the Statistics Department, University of Sevilla)\nIntroduction to Bioinformatics (4 days course, taught at the Institut de Ciències del Mar, in Blanes)\nIntegrative Omics Data Analysis (1 day course, taught at the Statistics Department, University of Sevilla)"
   },
   {
     "objectID": "research.html",
@@ -81,7 +88,42 @@
     "href": "config_information/quartoWebDev-Howto.html",
     "title": "Notes sobre el desenvolupament de la Web",
     "section": "",
-    "text": "Introducció\nAquestes notes descrieun el procés pas a pas per crear una webper al grup de recerca EstBioinfo i publicar-la al domini http://www.ub.edu/estbioinfo.\nEl procés s’ha fet amb Quarto 1.4 i seguint les indicacions de diveros manuals oficials de Quarto\n\n\nCreació del projecte\nPer començar hem creat un projecte tipus “Web Site” seguint les indicacions de: https://quarto.org/docs/websites/.\nAixò ha creat un document “index.qmd” que conté l’esquelet de la web. Si el renderitzem veurem l’aspecte de partida.\n\n\nEstructura de la web\nMoltes webs tenen una pàgina principal (home) que adreça a les distintes pàgines de que consta el lloc.\nPer tal de dotar la web d’aquesta estructura fem el següent:\n\nCreem cada pàgina per separat en un arxiu .qmd\n\n\n    index.qmd    \n    about.qmd       \n    contact.qmd  \n    members.qmd       \n    software.qmd\n    activities.qmd  \n    publications.qmd  \n    research.qmd            \n    training.qmd\n\nCada arxiu té la mateixa estructura bàsica, per exemple members.qmd:\n\n    # Members\n    ## Current and former group members\n    &lt;!-- Incluir información sobre miembros presentes y catuales --&gt;\n\n\nL’arxiu index.qmd pot ser diferent ja que fara de “home page”\n\n\n    ---\n    title: \"Statistics and Bioinformatics Research Group\"\n    output:\n      html_document:\n        toc: true\n        code_folding: true\n    ---\n\n    This is the home page of the Statistics and Bioinformatics Research Group\n\nL’estructura de la web a l’arxiu _quarto.yaml es defineix de la forma següent:\n\nproject:\n  type: website\n\nwebsite:\n  title: \"EstBioInfo\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n      - href: research.qmd\n        text: Research\n      - href: publications.qmd\n        text: Publications\n      - href: members.qmd\n        text: Members\n      - href: training.qmd\n        text: Teaching\n      - href: software.qmd\n        text: Sofwtare\n      - href: activities.qmd\n        text: Activities\n      - href: contact.qmd\n        text: Contact\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true\n\nObservem com index.qmd fa de home page perquè és el primer que apareix.\n\n\nCreació dels arxius del lloc web\nAmb aquesta estructura fet podem compilar-ho tot de cop amb la instrucció quarto preview eibwebsite que executarem des de la terminal situant-nos al directori quye conté el directori del projecte.\nAixò crearà un subirectori _site que conté tots els arxius necessaris per penjar la web al lloc on s’allotjarà."
+    "text": "Aquestes notes descrieun el procés pas a pas per crear una webper al grup de recerca EstBioinfo i publicar-la al domini http://www.ub.edu/estbioinfo.\nEl procés s’ha fet amb Quarto 1.4 i seguint les indicacions de diveros manuals oficials de Quarto"
+  },
+  {
+    "objectID": "config_information/quartoWebDev-Howto.html#creació-del-projecte",
+    "href": "config_information/quartoWebDev-Howto.html#creació-del-projecte",
+    "title": "Notes sobre el desenvolupament de la Web",
+    "section": "1. Creació del projecte",
+    "text": "1. Creació del projecte\nPer començar hem creat un projecte tipus “Web Site” seguint les indicacions de: https://quarto.org/docs/websites/.\nAixò ha creat dos documents\n\nUn document “index.qmd” que conté l’esquelet de la web. Si el renderitzem veurem l’aspecte de partida.\nUn document _quarto.yaml que és on es defineixen les característiques de la web. Aquest és el document que hem d’aprendre a configurar per definir com funciona la web que creem.\n\n\nproject:\n  type: website\n\nwebsite:\n  title: \"webEstbioinfo\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      \nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true"
+  },
+  {
+    "objectID": "config_information/quartoWebDev-Howto.html#estructurar-la-web",
+    "href": "config_information/quartoWebDev-Howto.html#estructurar-la-web",
+    "title": "Notes sobre el desenvolupament de la Web",
+    "section": "2. Estructurar la web",
+    "text": "2. Estructurar la web\nMoltes webs tenen una pàgina principal (home) que adreça a les distintes pàgines de que consta el lloc.\nPer tal de dotar la web d’aquesta estructura fem el següent:\n\nCreem cada pàgina per separat en un arxiu .qmd\n\n\n    index.qmd    \n    about.qmd       \n    contact.qmd  \n    members.qmd       \n    software.qmd\n    activities.qmd  \n    publications.qmd  \n    research.qmd            \n    training.qmd\n\nCada arxiu té la mateixa estructura bàsica, per exemple members.qmd:\n\n    # Members\n    ## Current and former group members\n    &lt;!-- Incluir información sobre miembros presentes y catuales --&gt;\n\n\nL’arxiu index.qmd pot ser diferent ja que fara de “home page”\n\n\n    ---\n    title: \"Statistics and Bioinformatics Research Group\"\n    output:\n      html_document:\n        toc: true\n        code_folding: true\n    ---\n\n    This is the home page of the Statistics and Bioinformatics Research Group\n\nL’estructura de la web es defineix modificant l’arxiu quarto.yaml de la forma següent:\n\nproject:\n  type: website\n  output-dir: _site\n\nwebsite:\n  title: \"EstBioInfo\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n      - href: research.qmd\n        text: Research\n      - href: publications.qmd\n        text: Publications\n      - href: members.qmd\n        text: Members\n      - href: training.qmd\n        text: Teaching\n      - href: software.qmd\n        text: Sofwtare\n      - href: activities.qmd\n        text: Activities\n      - href: contact.qmd\n        text: Contact\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true\n\nObservem com index.qmd fa de home page perquè és el primer que apareix."
+  },
+  {
+    "objectID": "config_information/quartoWebDev-Howto.html#creació-dels-arxius-del-lloc-web",
+    "href": "config_information/quartoWebDev-Howto.html#creació-dels-arxius-del-lloc-web",
+    "title": "Notes sobre el desenvolupament de la Web",
+    "section": "3. Creació dels arxius del lloc web",
+    "text": "3. Creació dels arxius del lloc web\nAmb aquesta estructura fet podem compilar-ho tot de cop amb la instrucció:\nquarto render webEstbioinfo\nque executarem\n\ndes de la terminal\nsituant-nos al directori superior del que conté el projecte.\n\nAixò crearà un subirectori _site que conté tots els arxius necessaris per penjar la web al lloc on s’allotjarà.\nA mida que anem treballant cada cop que modifiquem un arxiu de la web es recompila per actualitzar-se. També podem forçar-ho fent:\nquarto preview webEstbioinfo\nque actualitza només els darrers arxius canviats.\n\nAlguns problemes detectats\n\nSovint el “preview” d’un arxiu “arxiu.qmd” crea una carpeta “arxiu_files” que impedeix que el procés conclogui i dóna el següent error:\nWARNING: Error removing file C:\\Users\\Usuario\\...\\webEstbioinfo.quarto_freeze\\site_libs\\quarto-html: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (os error 32): remove 'C:\\Users\\Usuario\\...\\webEstbioinfo.quarto_freeze\\site_libs\\quarto-html' Output created: _site\\ARXIU.html\nEsborrant la carpeta (i potser repetint-ho varis cops) sol resoldre el problema."
+  },
+  {
+    "objectID": "config_information/quartoWebDev-Howto.html#publicació-de-la-web",
+    "href": "config_information/quartoWebDev-Howto.html#publicació-de-la-web",
+    "title": "Notes sobre el desenvolupament de la Web",
+    "section": "4. Publicació de la web",
+    "text": "4. Publicació de la web\nLa web que hem creat així es pot publicar a diversos llocs\n\nA quartopub.com un servei d’allotjament creat i mantingut per `quarto.\nA github mitjançant github pages\nA un servei de hosting propi, per exemple www.ub.edu/estbioinfo pujant-hi tots els arxius generats al “output-directory”"
+  },
+  {
+    "objectID": "config_information/quartoWebDev-Howto.html#refinament-del-lloc-web",
+    "href": "config_information/quartoWebDev-Howto.html#refinament-del-lloc-web",
+    "title": "Notes sobre el desenvolupament de la Web",
+    "section": "5. Refinament del lloc web",
+    "text": "5. Refinament del lloc web\nLa web creada així es pot refinar força.\n\nFent servir estils css\nAmb les opcions de quarto descrites a [https://quarto.org/docs/reference/projects/websites.html](https://quarto.org/docs/reference/projects/websites.html)"
   },
   {
     "objectID": "index.html",
@@ -103,19 +145,5 @@
     "title": "Software",
     "section": "",
     "text": "As part of our research we develop distinct type of applications, most of them using R. These can be accessed through our personal github sites and also as public shiny applications that we provide through the GrBio web server\n\n\n\nAlex Sánchez github site\nEstbioinfo github\n\n\n\n\n\nLheuristic\nkernelPCA\ntestrapptio"
-  },
-  {
-    "objectID": "training.html#current-corses",
-    "href": "training.html#current-corses",
-    "title": "Training",
-    "section": "",
-    "text": "Course information\nCourse materials"
-  },
-  {
-    "objectID": "training.html#past-courses",
-    "href": "training.html#past-courses",
-    "title": "Training",
-    "section": "",
-    "text": "Web Scraping for socioeconomic development using R\n\n\n\n\n\nDeep learning using R\n\n\n\n\n\nData Management Programing and Graphics with R\nData Analysis and Experimental Design with R\nWeb scrapping: Getting data from the web with R\n\n\n\n\n\nRNA-seq data analysis (2 day course, taught at the Statistics Department, University of Sevilla)\nIntroduction to Bioinformatics (4 days course, taught at the Institut de Ciències del Mar, in Blanes)\nIntegrative Omics Data Analysis (1 day course, taught at the Statistics Department, University of Sevilla)"
   }
 ]
