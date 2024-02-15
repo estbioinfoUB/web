@@ -9,5 +9,6 @@ The site has been created with QUARTO that is
   
 The result of the process can be seen:
   - at the groups web site: [http://www.ub.edu/estbioinfo/index.htm](http://www.ub.edu/estbioinfo/index.htm)
-  - using github pages following [this link](https://github.com/estbioinfoUB/web/blob/main/_site/index.html)
+  - using github pages: [following this link]([https://estbioinfoUB.github.io/web/blob/main/_site/index.html]
+
 
