@@ -2,10 +2,21 @@
 ## Current and past training activities
 <!-- Incluir información sobre cursos que se ofrecen actualmente o los que se han impartido -->
 
+## Current Corses
+
+### R courses
+
+- [Course information](https://www.ub.edu/idp/web/es/node/1712)
+
+- [Course materials](https://www.ub.edu/cursosR/cursos.html)
+
+## Past courses
+
+### 2022
+
+- [Web Scraping for socioeconomic development using R](https://aspteaching.github.io/WSWRCourse/)
 
 ### 2020
-
-- Web Scraping for socioeconomic development using R
 
 - Deep learning using R
 
