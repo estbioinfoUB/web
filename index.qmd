@@ -14,7 +14,7 @@ knitr::include_graphics("images/estbioinfohome.png")
 
 We are moving our site from a Google Sites page ([https://sites.google.com/view/estbioinfo](https://sites.google.com/view/estbioinfo)) to a new site created with Quarto.
 
-If you miss some information here you can check the old site fot it.
+If you miss some information here you can check the old site for it.
 
 <br>
 
