@@ -5,7 +5,7 @@ output:
     toc: true
     code_folding: true
     embed_resources: false
-bibliography: estbioinfoRefs.bib
+bibliography: EstBioInfo_refs_20240216.bib
 csl: elsevier-harvard-with-titles-with-notes_anna.csl
 nocite: |
   @*
