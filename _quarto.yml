@@ -17,11 +17,11 @@ website:
       - href: members.qmd
         text: Members
       - href: training.qmd
-        text: Teaching
+        text: Training
       - href: software.qmd
-        text: Sofwtare
-      - href: activities.qmd
-        text: Activities
+        text: Software
+      # - href: activities.qmd
+      #   text: Activities
       - href: contact.qmd
         text: Contact
         

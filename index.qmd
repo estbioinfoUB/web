@@ -1,5 +1,5 @@
 ---
-title: "Statistics and Bioinformatics Research Group"
+title: "Statistics and Bioinformatics Research Group Website"
 output:
   html_document:
     toc: true
