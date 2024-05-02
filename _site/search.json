@@ -23,37 +23,37 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Statistics and Bioinformatics Research Group Website",
+    "title": "Statistics and Bioinformatics Research Group",
     "section": "",
-    "text": "We are moving our site from a Google Sites page (https://sites.google.com/view/estbioinfo) to a new site created with Quarto.\nIf you miss some information here you can check the old site for it."
+    "text": "Bioinformatics, the multidisciplinary science that deals with the acquisition, processing and analysis of biological information, through the application of techniques and tools from computer science, mathematics or biology, has been decisive in the development of life orr health sciences during the last decades. Statistics has contributed to these developments, particularly by providing methods of data analysis. At the same time, however, it has benefited from it, facing problems that have fueled its growth in several areas.\nThe Statistics and Bioinformatics Research Group (EstBioinfo) has as its main objective the research, development and application of statistical methods in problems that arise at the interface between bioinformatics and statistics.\nOur interest has evolved from omics data analysis to methods and tools for the integrative analysis of multi-omics data and their applications in diverse fields ranging from oncology and neurology to nutrition and metabolomics\nOur group research lines includes\n\nIntegrative analysis of omics data using biological knolwedge\nMachine learning and AI for omics data integration and interpretation\nBioinformatics Software development\nApplications in Nutrition and Metabolomics"
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Our headquarters are located at the Faculty of Biology, in the 2nd floor of Durfort’s Building."
+    "text": "Facultat de Biologia\nEdifici Durfort, 2ona planta\nSecció d’Estadística.  Dept. de Genètica, Microbiologia i Estadística.\nDiagonal 643\n08028 Barcelona"
   },
   {
     "objectID": "contact.html#contact-information",
     "href": "contact.html#contact-information",
     "title": "Contact",
     "section": "",
-    "text": "Our headquarters are located at the Faculty of Biology, in the 2nd floor of Durfort’s Building."
+    "text": "Facultat de Biologia\nEdifici Durfort, 2ona planta\nSecció d’Estadística.  Dept. de Genètica, Microbiologia i Estadística.\nDiagonal 643\n08028 Barcelona"
   },
   {
     "objectID": "software.html",
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "As part of our research we develop distinct type of applications, most of them using R. These can be accessed through our personal github sites and also as public shiny applications that we provide through the GrBio web server\n\n\n\nAlex Sánchez github site\nEstbioinfo github\n\n\n\n\n\nLheuristic\nkernelPCA\ntestrapptio"
+    "text": "As part of our research we develop distinct type of applications, most of them using R. These can be accessed through our personal github sites and also as public shiny applications that we provide through the GrBio web server\n\n\n\ngoProfiles\ngoSorensen\nlheuristic Undergoing submission\n\n\n\n\n\nEstbioinfo github site\nAlex Sanchez’s github\n\n\n\n\n\nLheuristic\nkernelPCA\ntestrapptio"
   },
   {
     "objectID": "software.html#r-packages-web-applications-and-other-software-products",
     "href": "software.html#r-packages-web-applications-and-other-software-products",
     "title": "Software",
     "section": "",
-    "text": "As part of our research we develop distinct type of applications, most of them using R. These can be accessed through our personal github sites and also as public shiny applications that we provide through the GrBio web server\n\n\n\nAlex Sánchez github site\nEstbioinfo github\n\n\n\n\n\nLheuristic\nkernelPCA\ntestrapptio"
+    "text": "As part of our research we develop distinct type of applications, most of them using R. These can be accessed through our personal github sites and also as public shiny applications that we provide through the GrBio web server\n\n\n\ngoProfiles\ngoSorensen\nlheuristic Undergoing submission\n\n\n\n\n\nEstbioinfo github site\nAlex Sanchez’s github\n\n\n\n\n\nLheuristic\nkernelPCA\ntestrapptio"
   },
   {
     "objectID": "config_information/quartoWebDev-Howto.html",
@@ -123,7 +123,7 @@
     "href": "about.html",
     "title": "About us",
     "section": "",
-    "text": "The Statistics and Bioinformatics Research Group has as its main objective the research, development and application of statistical methods in problems arising in the interface between bioinformatics and statistics.\nOur initial interest was the analysis of “single-omics” data such as expression microarrays. Later we have evolved to be interested in problems and methods for the integrative analysis of the omics data. We are currently collaborating on various projects of this kind in fields such as neuroscience, immunology or metabolomics.\n\n\nOur group interacts in different ways with other research groups. While we are not a “Consolidated Research Group” of the Generalitat de Catalunya, we work with two of them.\n\nSome of our members belong to GRBio, Grup de Recerca en Bioestadística i Bioinformàtica, a consolidated research group of the Generalitat de Catalunya, with whom we share orientations and research interests.\nOthers are members of the Biomarkers in Nutrition and Metabolomic Research Group with whom we work together in a variety of projects in the interface between metabolomics, and nutrition.\n\nBesides this, we have a kind relation with the Statistics and Bioinformatics Unit (UEB) in Vall d’Hebron Research Institute (VHIR), which we contributed to create and which was led by Alex Sanchez for more than 12 years (2008-2020)."
+    "text": "About us\nOur group was born in the former Statistics Department of the Faculty of Biology, that has now evolved into the Genetics, Microbiology and Statistics department.\nOur strong interdisciplinary vocation has lead us to collaborate and become integrated withother research groups. While we are not a “Consolidated Research Group” of the Generalitat de Catalunya, we intersect with two f them work with two of them.\nSome of our members belong to GRBio, Grup de Recerca en Bioestadística i Bioinformàtica, a consolidated research group of the Generalitat de Catalunya, with whom we share orientations and research interests.\nOthers are members of the Biomarkers in Nutrition and Metabolomic Research Group with whom we work together in a variety of projects in the interface between metabolomics, and nutrition.\nBesides this, we have a kind relation with the Statistics and Bioinformatics Unit (UEB) in Vall d’Hebron Research Institute (VHIR), which we contributed to create and which was led by Alex Sanchez for more than 12 years (2008-2020)."
   },
   {
     "objectID": "about.html#mision-vision-values-and-history",

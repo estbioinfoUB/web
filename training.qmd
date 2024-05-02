@@ -10,7 +10,7 @@ Incluir información sobre cursos que se ofrecen actualmente o los que se han im
 
 ### Metabolomics Data Analysis (2024)
 
-- [Course website](https://estbioinfoUB.github.io/MetaboDA2024)
+- [Course website](https://www.ub.edu/estbioinfo/courses/mda)
 
 ### R courses
 
