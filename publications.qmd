@@ -6,7 +6,7 @@ output:
     code_folding: true
     embed_resources: false
 bibliography: EstBioInfo_refs_20240216.bib
-csl: elsevier-harvard-with-titles-with-notes_anna.csl
+# csl: elsevier-harvard-with-titles-with-notes_anna.csl
 nocite: |
   @*
 ---
