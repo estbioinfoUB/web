@@ -1,8 +1,16 @@
 # Training
-## Current and past training activities
-<!-- Incluir información sobre cursos que se ofrecen actualmente o los que se han impartido -->
 
-## Current Corses
+<!-- 
+## Current and past training activities
+Cuando hayan muchos cursos se puede poner aquí un índice
+Incluir información sobre cursos que se ofrecen actualmente o los que se han impartido 
+-->
+
+## Current Courses
+
+### Metabolomics Data Analysis (2024)
+
+- [Course website](https://www.ub.edu/estbioinfo/courses/mda)
 
 ### R courses
 

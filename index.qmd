@@ -7,18 +7,32 @@ output:
     embed_resources: false
 ---
 
-```{r echo=FALSE, fig.align='center'}
-knitr::include_graphics("images/estbioinfohome.png")
-```
+Bioinformatics, the multidisciplinary science that deals with the acquisition, processing and analysis of biological information, through the application of techniques and tools from computer science, mathematics or biology, has been decisive in the development of life orr health sciences during the last decades. Statistics has contributed to these developments, particularly by providing methods of data analysis. At the same time, however, it has benefited from it, facing problems that have fueled its growth in several areas.
+
+The Statistics and Bioinformatics Research Group (EstBioinfo) has as its main objective the research, development and application of statistical methods in problems that arise at the interface between bioinformatics and statistics.
+
+Our interest has evolved from omics data analysis to methods and tools for the integrative analysis of multi-omics data and their applications in diverse fields ranging from oncology and neurology to nutrition and metabolomics
+
+Our group research lines includes
+
+- Integrative analysis of omics data using biological knolwedge
+- Machine learning and AI for omics data integration and interpretation
+- Bioinformatics Software development
+- Applications in Nutrition and Metabolomics
 
 
-We are moving our site from a Google Sites page ([https://sites.google.com/view/estbioinfo](https://sites.google.com/view/estbioinfo)) to a new site created with Quarto.
+<hr>
+[![](images/estbioinfo.png){width="40%" align="left"}](https://www.ub.edu/estbioinfo)
+![](images/blank.png){width="15%" align="center"}
+[![](images/ub.jpg){width="40%" align="right"}](http://www.ub.edu)
 
-If you miss some information here you can check the old site for it.
+<hr>
 
-<br>
 
-```{r echo=FALSE, fig.align='center'}
-knitr::include_graphics("images/estbioinfo.png")
-knitr::include_graphics("images/ub2017.png")
-```
+<!-- ```{r echo=FALSE, fig.align='center', out.width="15%"} -->
+<!-- knitr::include_graphics("images/grbio.jpg") -->
+<!-- ``` -->
+
+<!-- ```{r echo=FALSE, fig.align='center', out.width="25%"} -->
+<!-- knitr::include_graphics("images/nutrimetabolomics.png") -->
+<!-- ``` -->
