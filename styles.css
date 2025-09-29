@@ -40,8 +40,8 @@
 .card-img-top {
   width: auto !important;     /* anul·la el width: 100% de Bootstrap */
   height: auto;
-  max-width: 200px;           /* limita amplada màxima */
-  max-height: 220px;          /* limita alçada màxima */
+  max-width: 100px;           /* limita amplada màxima */
+  max-height: 110px;          /* limita alçada màxima */
   display: block;
   margin-left: 50px;
   margin-right: auto;         /* centra horitzontalment */
