@@ -5,6 +5,8 @@ project:
 website:
   title: "EstBioInfo"
   navbar:
+    background: primary
+    search: true
     left:
       - href: index.qmd
         text: Home
@@ -24,39 +26,15 @@ website:
       #   text: Activities
       - href: contact.qmd
         text: Contact
-        
-  # sidebar:
-  #   background: primary
-  #   style: docked
-  #   search: true
-  #   contents:
-  #     - href: index.qmd
-  #       text: Home
-  #     - href: about.qmd
-  #       text: About
-  #     - href: research.qmd
-  #       text: Research
-  #     - href: publications.qmd
-  #       text: Publications
-  #     - href: members.qmd
-  #       text: Members
-  #     - href: training.qmd
-  #       text: Teaching
-  #     - href: software.qmd
-  #       text: Sofwtare
-  #     - href: activities.qmd
-  #       text: Activities
-  #     - href: contact.qmd
-  #       text: Contact
-
+  page-footer:
+    center: |
+      [![UB](images/ub.jpg){width=80px}](https://www.ub.edu)  
+      © 2025 EstBioInfo — Universitat de Barcelona
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
-    embed_resources: false
-
-
-
-
+    toc: false
+    link-external-newwindow: true
+    smooth-scroll: true

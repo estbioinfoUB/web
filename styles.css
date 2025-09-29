@@ -1,1 +1,77 @@
-/* css styles */
+
+/* --- Colors inspirats en la UB --- */
+:root {
+  --ub-blue: #003a6d;
+  --ub-light-blue: #005fa4;
+  --ub-grey: #f5f5f5;
+}
+
+/* --- Estil de la navbar --- */
+.navbar {
+  background-color: var(--ub-blue) !important;
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Peu de pàgina --- */
+.page-footer {
+  background-color: var(--ub-grey);
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* --- Targetes de membres --- */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.card-img-top {
+  width: auto !important;     /* anul·la el width: 100% de Bootstrap */
+  height: auto;
+  max-width: 200px;           /* limita amplada màxima */
+  max-height: 220px;          /* limita alçada màxima */
+  display: block;
+  margin-left: 50px;
+  margin-right: auto;         /* centra horitzontalment */
+  object-fit: contain;        /* mostra la imatge sencera sense retallar */
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* --- Galeria d'imatges --- */
+.quarto-figure img {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 90%;
+}
+
+/* --- Ajustos generals --- */
+body {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  background-color: white;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--ub-blue);
+  font-weight: 600;
+}
