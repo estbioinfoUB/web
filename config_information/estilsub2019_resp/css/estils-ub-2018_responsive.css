@@ -1,0 +1,850 @@
+/* ================================================================ */
+/* Estils UB 'responsive' 
+	per a pàgines estàtiques amb comportament 'responsive'.
+	-------------------------------------------------------------
+	Author: Entorns Web - Universitat de Barcelona
+	[JG]
+	-------------------------------------------------------------
+	Version: Versió 1.3 - Canvi d'ordre i noms divs #top02 -> #top01-logo i #top01 -> #top02-lang.
+	Version: Versió 1.2 - Modificacions diverses [./versions-i-millores.txt]
+	Version: Versió 1.1 - Passat per Beautify [http://codebeautify.org/css-beautify-minify]
+	-------------------------------------------------------------
+	Date: 2017-04-07
+	Modified: 2018-02-28
+  ================================================================= */
+
+/* ================================================================ */
+/* ================================================================ */
+/*  Configuració 'flex' inicial dels blocs: */
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  background-color: #fff;
+}
+/* We tell all items to be 100% width */
+.header, .main, .nav, .aside, .footer {
+  flex: 1 100%;
+  text-align: left;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+  text-align: left;
+}
+
+/* We rely on source order for desktop-first approach
+ * in this case:
+	 * 1. header
+	 * 2. nav
+	 * 3. main
+	 * 4. aside
+	 * 5. footer
+ */
+.header {
+  flex: 1 1 100%;
+  order: 1;
+}
+
+.main {
+  flex: 3 1 50%; /* 3 1 60%; */ /* 3 1 0; */ /* Solucionat problema IE? [2017-07-14]. */
+  order: 3;
+  text-align: left;
+}
+
+.aside {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.aside-1, .nav {
+  flex: 1 0 20%; /* 1 0 0%; */ /* Solucionat problema IE? [2017-07-14]. */
+  order: 2;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.aside-2 {
+  flex: 1 1 20%; /* 1 1 0; */
+  order: 4;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer {
+  flex: 1 1 100%;
+  order: 5;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+
+
+/* ================================================================ */
+/* ================================================================ */
+/*  Configuració general inicial dels blocs: */
+.wrapper {
+  margin: 0 auto 15px;
+  width: 1280px;
+}
+.header {}
+.main {
+  min-height: 400px;
+  padding: 0 1em;
+  margin: 10px 0; /* 1em 0; */ /* Nou bàner! [2018-03-22] */
+}
+.aside {}
+.aside-1, .nav {
+  max-width: 220px; /*  200px; */ /* 2018-03-20 */
+  margin-top: 30px; /* Nou bàner! [2018-03-22] */
+}
+.aside-2 {
+  margin-right: .5em;
+  margin-top: 30px; /* Nou bàner! [2018-03-22] */
+  max-width: 248px; /* Nou: 2018-02-26 */
+}
+.footer {
+  font-size: .8em;
+}
+
+/* 1 - .header: -------------------------------------------- */
+/* 1 - .header. -------------------------------------------- */
+
+
+/* 2 - .aside-1 .nav: -------------------------------------------- */
+/* 2 - .aside-1 .nav. -------------------------------------------- */
+
+
+/* 3 - Blocs de .main: -------------------------------------------- */
+/* 3 - Blocs de .main. -------------------------------------------- */
+
+
+/* 4 - Blocs d' .aside-2: -------------------------------------------- */
+.aside-2 .destacats { order: 1; }
+.aside-2 .tinteressa { order: 2; }
+.aside-2 .nuvol { order: 3; }
+.aside-2 .docs-relacionats { order: 4; }
+/* 4 - Blocs d' .aside-2: -------------------------------------------- */
+
+/* 5 - Blocs de .footer: -------------------------------------------- */
+.footer .media {
+  flex: 1 1 100%;
+  order: 1;
+  text-align: right;
+}
+
+.footer .data {
+  flex: 3 1 0;
+  order: 2;
+}
+
+.footer .excel {
+  flex: 1 1 0;
+  order: 3;
+  text-align: right;
+  left: unset;
+}
+/* 5 - Blocs de .footer. -------------------------------------------- */
+
+
+/* ================================================================ */
+/* ================================================================ */
+/*  Mediaqueries per a diferents configuracions: */
+
+/* ------------------------------------------------------------- */
+/* Tauletes grans i pantalles petites: */
+@media only screen and (max-width: 1280px) {
+/* (max-width: 960px) { */	/* and (min-width: 801px) */
+  .wrapper {
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 0; /* none; */
+    width: 100%;
+  }
+  #top01-logo,
+  #top02 {
+	/* background: rgba(0, 0, 0, 0) url("../css/css_img/bkgrounds/franja_2-top02-ub-2015.png") no-repeat scroll left bottom; */
+	background-size: auto 5px;
+  }
+  #top-logo,
+  #top {
+	/* padding: 50px 0 0 9px; */
+	background: url(../css/css_img/bkgrounds/logobarra_home.png) no-repeat scroll 25px -5px;
+	background-size: 226px;
+  }
+  #top-logo img,
+  #top img {
+    height: 60px;
+    margin: 5px 0;
+  }
+  header #top02-lang {
+	  background: none;
+	  width: 1280px;
+	  right: 0;
+	  height: auto;
+  }
+  #languages {
+	  background: #eeeeee url(../css/css_img/bkgrounds/corva.jpg) no-repeat scroll left center;
+	  right: 0;
+	  top: unset;
+	  height: 28px;
+	  width: 220px;
+  }
+  #languages ul {
+	  padding: 3px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Tauletes normals i mòbils horitzontals: */
+@media only screen and (max-width: 900px) {
+  .paginador li a, 
+  .paginador li a:link, 
+  .paginador li a:visited, 
+  .paginador li a:active {
+	 font-size: .9em;
+	 line-height: 1.2em;
+	 padding: 6px;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Tauletes normals i mòbils horitzontals: */
+@media only screen and (max-width: 800px) {
+	/* and (min-width: 641px) */
+	/* .wrapper {
+		 box-shadow: none;
+		 margin: none;
+		 padding: none;
+		 width: 100%;
+	} */
+	/* .main {
+		flex: 2 0;
+	} */
+	header::after {
+		height: 1px;
+		margin-bottom: -9%;
+	}
+	.main {
+		flex: 3 1 60%;
+		margin: 5px 0;
+	}
+
+	.aside-1, .nav {
+		max-width: none;
+	}
+
+  .nav {
+    flex: 1 0 100%;
+    position: inherit;
+    right: auto;
+    margin-right: 0;
+    /* margin-top: 5px; */
+  }
+
+  .aside-2 {
+    flex: 1 0;
+  	 width: 100%;
+	 max-width: none;
+  }
+  .destacats,
+  .tinteressa,
+  .docs-relacionats,
+  .nuvol {
+	  width: 60%;
+	  margin: 2em auto 1em;
+  }
+
+  #top02 {
+    background-size: auto 5px;
+  }
+
+  #top {
+    /* padding: 50px 0 0 10px; */
+    background: url(../css/css_img/bkgrounds/logobarra_home.png) no-repeat scroll 25px -5px;
+    background-size: 226px;
+  }
+
+  #top img {
+    height: 50px;
+    margin: 13px 0;
+  }
+  #top03 h2 {
+	margin-top: 12px;
+  }
+  
+  #side-nav {
+    padding: 1px 0; /* 0 4px 0; */ /* Menú horitzontal en 2 files (2017-06-16). */
+    width: 100%; /* 98%; */ /* Menú horitzontal en 2 files (2017-06-16). */
+	 margin: -1em 0 0;  /* Menú horitzontal en 2 files (2017-06-16). */
+  }
+
+  .menu-nav {
+    width: auto;
+    height: auto; /* 60px; */ /* Menú horitzontal en 2 files (2017-06-16). */
+    align-items: center;
+    flex-flow: row wrap; /* row nowrap; */ /* Menú horitzontal en 2 files (2017-06-16). */
+    padding: 0 1px;
+    margin: 1px;
+  }
+	/* .menu-nav .submenu:hover > span {
+		display: flex;
+	} */
+  .menu-nav .submenu .menu-nav {
+    margin-top: 5px;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  #side-nav li.submenu:hover:before {
+    content: none;
+  }
+
+  .menu-nav li {
+	/* align-self: auto; */
+	flex: 1 1 15%; /* 1 0 auto; */ /* Menú horitzontal en 2 files (2017-06-16). */
+	height: 50px;
+	min-width: 50px;
+	min-height: 0;
+	width: auto;
+	text-align: center;
+  }
+
+  .menu-nav li a,
+  .menu-nav li span {
+    height: auto;
+  }
+
+  .menu-nav li.submenu:hover ul {
+    display: inline-flex;
+    overflow: visible;
+  }
+  .menu-nav li.submenu:hover li {
+    height: 42px;
+	 margin-top: 4px;
+  }
+
+  .side-block {
+    display: none;
+  }
+  
+  .destacats,
+  .tinteressa,
+  .docs-relacionats,
+  .nuvol {
+	  min-width: 300px;
+  }
+  
+  .destacats a {
+	  height: 30%;
+  }
+  .destacats a.dues_linies {
+	  height: 50%;
+  }
+
+  .tinteressa ul {
+	 margin: 0 .5em 1em .8em;
+  }
+  .nuvol ul.nuvol-paraules {
+    font-size: 1.1em;
+    padding: .5em;
+  }
+
+  .nuvol-paraules li {
+    line-height: 2em;
+  }
+
+  .footer .excel {
+    display: none;
+  }
+
+  .footer ul.data {
+    padding-bottom: 10px;
+    padding-top: 16px;
+	min-height: 42px;
+  }
+  
+  .flex-item {
+	 /* font-size: 1.6em; */
+	 /* height: 120px; */
+  }
+  
+  /* --------------------------------------------------- */
+  /* Canvis en els estils dels formularis (2019-05-10):  */
+  .form1 { width: 90%; }
+  .form1 fieldgroup { padding: 0 1em 1em; }
+  .form1 li { width: 90%; }
+  .form1 label { width: initial; }
+  li input { width: 100%; }
+  input[type="radio"] { margin-left: 0!important; }
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Dispositius mitjans-petits: */
+@media only screen and (max-width: 640px) {
+	/* and (min-width: 461px)  */
+	
+  .main { margin: 0; }
+
+  #top01-logo,
+  #top02 {
+    height: 70px;
+  }
+  #top-logo,
+  #top {
+    /* padding: 72px 0 0 10px; */
+    background: url(../css/css_img/bkgrounds/logobarra_home.png) no-repeat scroll 25px -5px;
+    background-size: 209px;
+  }
+  #top-logo img,
+  #top img {
+	 margin: 10px 0;
+  }
+  #serveis {
+    display: none;
+  }
+
+  header::after {
+	height: 1px;
+	margin-bottom: -11.5%;
+  }
+
+  #top03 h2, 
+  #top03 span.logo-facultat { 
+    font-size: 1.6em; 
+	 line-height: .7em;
+	 margin-top: 2%;
+  }
+
+  .nav { margin-top: 22px; }
+
+  #side-nav { margin: 0;  /* Menú horitzontal en 2 files (2017-06-16). */ }
+  .menu-nav li { flex: 1 1 20%; /* 1 0 auto; */ /* Menú horitzontal en 2 files (2017-06-16). */ }
+  
+  .destacats,
+  .tinteressa,
+  .docs-relacionats,
+  .nuvol {
+	  width: 248px;
+  }
+  .main p {
+	text-align: left;
+  }
+  
+  #avis-vot {
+	width: 70%;
+	font-size: 1.5em;
+	left: 10px;
+  }
+  
+  .footer ul.data { padding-top: 6px; }
+
+  .paginador li a, 
+  .paginador li a:link, 
+  .paginador li a:visited, 
+  .paginador li a:active {
+	 font-size: .9em;
+	 line-height: 1.2em;
+	 padding: 5px;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* Sols una columna de carpetes: */
+@media only screen and (max-width: 620px) {
+	
+  .flex-container {
+    -webkit-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* Mòbils verticals: */
+@media only screen and (max-width: 460px) {
+  body { font-size: .8em; }
+  .wrapper {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .main {
+    flex: 2 100%;
+  }
+  .nav {
+    order: 2;
+    flex: unset;
+    position: absolute;
+    right: 1em;
+    width: 75%;
+  }
+  .aside-2 .destacats {
+    order: 2;
+  }
+  .aside-2 .tinteressa {
+    order: 3;
+  }
+  .aside-2 .nuvol {
+    order: 4;
+  }
+ .aside-2 .docs-relacionats {
+    order: 1;
+  }
+
+  #top01-logo,
+  #top02 {
+    background: none;
+    height: 60px;
+  }
+
+  #top-logo,
+  #top {
+    padding: 30px 2px;
+    background: url(../css/css_img/bkgrounds/logobarra_home.png) no-repeat scroll 25px -5px;
+    background-size: 205px;
+  }
+  #top-logo img,
+  #top img { margin: 1px 0; }
+
+  #top02-lang,
+  #top01 {
+    display: none;
+  }
+  header::after {
+	height: 1px;
+	margin-bottom: -20.5%;
+  }
+  #top03 h2 { 
+	 font-size: 1.4em;
+	 line-height: .9em; /* 1em; */ /* 2018-03-19 */
+	 margin-top: 2%; /* 1%; */ /* 2018-03-19 */
+  }
+  #top03 span.slogan {
+	 display: inline-block;
+	 margin-top: 0;
+	 padding-bottom: 3px;
+  }
+
+  .main {
+    padding: 0 1em;
+  }
+  
+  #side-nav {
+    position: absolute;
+    top: 0;
+    right: 1em; /* 5px; */
+    width: 75%;
+  }
+  #side-nav label {
+    display: block;
+    position: relative;
+    float: right;
+    background: #eee;
+    border: 0.15em solid rgba(60, 60, 60, 0.2);
+    border-radius: 4px;
+    font-size: 1.1em;
+    padding: 0; /* 0.45em; */
+    margin: 0; /* 0 -12px; */
+    min-height: 34px; /* 2.25em; */
+    height: 34px; /* 32px; */
+    width: 37px; /* 40px; */
+	 top: -2px; /* 14px; */ /* 2018-03-19 */ /* -1em; */
+  }
+  #side-nav label::after {
+    content: "≡";
+    color: #555;
+    font-size: 2.6em;
+    position: absolute;
+    right: 7px; /* 16px; */
+    top: 8px; /* 14px; */
+  }
+  #side-nav input[type="checkbox"]:checked ~ label {
+    width: 108%; /* 103%; */
+    background: #555;
+    border-radius: 0;
+	 height: 40px;
+	 left: 10px;
+  }
+  #side-nav input[type="checkbox"]:checked ~ label::after {
+    color: #eee;
+	 right: 12px;
+	 top: 12px;
+  }
+  #side-nav input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+  #side-nav li::before {
+    content: none;
+  }
+  #side-nav li.submenu::before {
+    content: none;
+  }
+  #side-nav ul {
+		display: none;
+		/* width: 75%; */
+		height: auto;
+		align-items: flex-start;
+		flex-flow: column nowrap;
+		padding: 1px 0;
+		margin: 57px -12px; /* 0 -12px; */
+  }
+  .menu-nav .submenu .menu-nav {
+    margin-top: 0;
+    position: relative;
+  }
+
+  #side-nav li li:after {
+    content: "›";
+    font: 1.4em sans-serif;
+    position: absolute;
+    right: .8em;
+  }
+  .menu-nav li.submenu:hover li {
+    height: inherit;
+	 margin-top: inherit;
+  }
+
+  #side-nav input[type="checkbox"]:checked ~ ul > li {
+    opacity: 1;
+    text-align: left;
+    width: 94%; /* 100%; */
+  }
+  #languages{
+	 background-color: transparent; 
+	 background-image: none;
+	 border:none;
+	 height:50px;
+	 position:absolute;
+	 top:30px;
+	 right:10px;
+	 z-index:666;
+  }
+
+  /*Estils capes grises (MS): */
+  .wrapper .bg_gris, .wrapper .bg_gris_menu {
+	 background-color: #555;
+	 opacity: 0.7;
+	 display:block;
+	 position: absolute;
+	 top:0;
+	 left:0;
+	 width:100%;
+	 min-height:100%;
+	 cursor: pointer;
+	 z-index:-1;
+  }
+  .wrapper .bg_gris.active-lang{
+	 z-index:20;
+  }
+  .wrapper .bg_gris.active{
+	 z-index:10;
+  }
+  .wrapper .bg_gris_menu.active{
+	 z-index:10;
+  }
+  .js{
+	 display: none;	
+  }
+  #top02-lang.open,
+  #top01.open {
+	 display: block;
+  }
+  #languages ul{
+	 background-color: #fff;
+	 border-radius: 10px;
+	 border: 1px solid #ccc;
+	 margin-left:0;
+	 padding-left:0;
+	 /* width:110px; */
+	 position: fixed;
+	 right: 15px;
+  }
+  #languages ul li {
+	 float: none;
+	 margin: 5px;
+	 /* width:100%; */
+	 border-bottom: 1px solid #ccc;
+	 width: 90px;
+	 font-size: 1.2em;
+	 display: inherit;
+	 text-align: center;
+	 background: none;
+	 padding: 5px 5px 8px;
+	 line-height: 1em;
+  }
+  #languages li:last-child {
+	 border-bottom: none;
+  }
+  #languages ul li.selected{
+	 border-top:none;
+  }
+  .langhide{
+	 display: block;
+	 position: absolute;
+	 top: 4px;
+	 right: 0;
+	 z-index: 10;
+  }
+
+  #side-nav input[type="checkbox"]:checked ~ ul > li.languages {
+    background-color: #fefefe;
+    text-align: right;
+  }
+  #side-nav input[type="checkbox"]:checked ~ ul > li.languages a:after,
+  #side-nav input[type="checkbox"]:checked ~ ul > li.languages span:after {
+    content: " ";
+    margin: 0 1em;
+  }
+  #side-nav input[type="checkbox"]:checked ~ ul > li.languages a,
+  #side-nav input[type="checkbox"]:checked ~ ul > li.languages span {
+    margin: 1em;
+  }
+  #side-nav input[type="checkbox"]:checked ~ ul > li::after {
+    content: "›";
+    font: bold 1.4em sans-serif;
+    position: absolute;
+    right: 0.25em;
+	 /* margin-top: -.2em; */
+  }
+  #side-nav input[type="checkbox"]:checked ~ ul > li.submenu::after {
+    content: "»";
+  }
+  #side-nav li.submenu:hover > a::before {
+	 content: "";
+  }
+  #side-nav input[type="checkbox"]:checked ~ ul > li.submenu:hover > a::after {
+    content: "«";
+    font: bold 1.4em sans-serif;
+	 color: #9cb8d3;
+    position: absolute;
+    right: .25em;
+  }
+  #side-nav ul ul {
+    display: none;
+	 margin: 0;
+  }
+/*   .menu-nav li li {
+	 background-color: #e4e4e4;
+	 width: 94%;
+  }
+  .menu-nav li li:hover {
+	 background-color: #c9c9c9;
+  } */
+  #side-nav li:hover ul {
+    display: flex;
+  }
+  .menu-nav .submenu:hover > span {
+    display: none;
+  }
+  .menu-nav li.capcalera {
+    display: block;
+  }
+  .menu-nav li.capcalera span {
+    display: block;
+    height: 24px;
+    padding: 10px;
+    background: #aaa url(css_img/icons/boto_menu.png) no-repeat scroll right top;
+    color: #fff;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .menu-nav li {
+    height: auto;
+    min-width: 0;
+    min-height: 40px;
+    width: 100%;
+  }
+  .menu-nav li.languages {
+    display: block;
+	 min-height: 20px;
+  }
+  .menu-nav .submenu .menu-nav {
+    width: auto;
+  }
+
+  .tinteressa, .nuvol, .docs-relacionats {
+    border-top: 4px solid #ddd;
+    background: none;
+    margin: 1em auto;
+    padding-bottom: 0;
+  }
+  .aside-2 .tinteressa ul,
+  .aside-2 .nuvol ul,
+  .aside-2 .docs-relacionats ul {
+    background: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 1px #ddd;
+    margin: 0 0.5em 0 1.5em;
+    padding: 1em .5em 0.5em 0.5em;
+  }
+
+  .nuvol ul.nuvol-paraules {
+    font-size: 1.2em;
+  }
+
+  .tinteressa h2, .nuvol h2, .docs-relacionats h2 {
+    line-height: 1em;
+    margin-bottom: 0;
+    padding-top: .0;
+  }
+
+  .footer .media {
+    background: none;
+    padding-top: 1em;
+    height: 70px;
+  }
+  .footer .media ul {
+    float: none;
+    /* height: 72px; */
+    margin: 0 5%;
+    text-align: unset;
+  }
+  .footer .media ul li:first-child {
+    margin-right: 2em;
+    padding-top: 0;
+	 width: 100%;
+	 text-align: center;
+  }
+  .footer .media ul li {
+	 margin-right: 1em;
+	 margin-top: 5px;
+  }
+
+  .flex-item {
+	 /* font-size: 1.2em; */
+	 /* height: 60px; */
+  }
+  .paginador li a, 
+  .paginador li a:link, 
+  .paginador li a:visited, 
+  .paginador li a:active {
+	 font-size: .8em;
+	 line-height: 1.2em;
+	 padding: 4px;
+  }
+  table.zebra { font-size: 0.8em; }
+  
+  /* --------------------------------------------------- */
+  /* Canvis en els estils dels formularis (2019-05-10):  */
+  .envolcall_botons { width: 100%; text-align: center; }
+  input[type="submit"], input[type="reset"] { 
+	position: inherit!important;
+	float: none!important;
+  }
+  input[type="reset"] {  }
+
+}

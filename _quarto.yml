@@ -17,9 +17,9 @@ website:
       - href: members.qmd
         text: Members
       - href: training.qmd
-        text: Teaching
+        text: Training
       - href: software.qmd
-        text: Sofwtare
+        text: Software
       - href: activities.qmd
         text: Activities
       - href: contact.qmd

@@ -1,0 +1,175 @@
+Hola
+
+Amb aquest paquet us fem disponibles les plantilles UB per a pàgines HTML 
+estàtiques i 'responsives' (els continguts s'adapten a dispositius mòbils i 
+tauletes oer a una visualització òptima).
+
+És un fitxer comprimit amb tots els recursos necessaris:
+
+    * Pàgina d'index [index.html]: amb format de 3 columnes. Si s'elimina la columna dreta 
+	   (<aside  class="asside-2">), la columna principal s'adapta al nou espai sense cap problema.
+    * Fitxer d'estils generals de la UB [css/estils-ub.css]
+    * Fitxer d'estils responsive de la UB [css/estils-ub_responsive.css]
+    * Imatges per als estils [css/css_img]
+    * I fitxers de Javascript necessaris per a alguns efectes (taules destacades, blocs desplegables, 
+	   colorbox) [js]
+
+1-CARACTERÍSTIQUES:
+La pàgina es construeix amb 5 blocs
+
+    1. header <- Capçalera
+    2. aside .nav <-Columna esquerra
+    3. article .main <-Columna principal
+    4. aside .aside-2 <-Columna dreta
+    5. footer <-Peu
+
+Per qüestions de SEO, el bloc .main es troba en primer lloc, després de la capçalera, encara que 
+ens el mostri en tercer lloc.
+
+El bloc aside .aside-2 (la columna dreta), si no es necessita, es pot eliminar. Llavors el bloc 
+article .main agafa tot l'espai disponible
+
+Cada bloc disposa de diversos sub-blocs. En cas de no ser necessaris, alguns es poden eliminar 
+sencers i altres se'n pot eliminar sols el contingut:
+
+    * header
+        - #top01
+           * #languages <- Es pot eliminar sencer
+        - #serveis <- Cal deixar-lo. Es pot eliminar la llista de serveis
+    * aside .nav (columna esquerra)
+        - nav#side-nav <- Es pot eliminar, però no és recomanable: és el menú principal
+        - .side-block <- Es pot eliminar sencer
+    * aside .aside-2 (columna dreta) <- Es pot eliminar sencer
+        - .destacats <- Es pot eliminar sencer
+        - .tinteressa <- Es pot eliminar sencer
+        - .nuvol <- Es pot eliminar sencer
+        - .docs-relacionats <- Es pot eliminar sencer
+    * footer
+        - .media <- Es pot eliminar sencer
+
+2-ELEMENTS DE LA CAPÇALERA (header)
+La imatge del bàner de capçalera, és una imatge de fons del bloc #top03. N'hi ha una 
+posada per defecte als estils, però si es vol canviar, sols cal posar la que es vol als estils de 
+la pròpia pàgina (sinó, es pot comentar aquest estil de la pàgina).
+
+El menú d'idiomes es pot ocultar, si no s'ha d'utilitzar (posar sols un idioma queda estrany).
+
+
+3-ELEMENTS DEL BLOC PRINCIPAL (article .main)
+El bloc principal disposa d'una sèrie de sub-blocs disponibles per tal de fer més llegible el text:
+
+    * .intro-txt: bloc de text destacat. Pot ser usat amb un <div class="intro-txt"> o modificant 
+	   un paràgraf <p class="intro-txt">. Pot tenir una imatge.
+    * Taules: si s'engloben en uns divs (<div class="taula01> o  <div class="taula02>) se'ls poden 
+	   donar característiques com .zebra i/o .destacafilaact
+    * Blocs desplegables 1: han de tenir un encapçalament previ <h3 class="titol-desplegable> i 
+	   el bloc plegable/desplegable ha d'estar dins un <div class="contingut-desplegable"> just a 
+		continuació de l'encapçalament.
+    * Blocs desplegables 2: Aquests blocs no necessiten un encapçalament, atès que mostren el 
+	   principi del text amb un enllaç "Veure'n més". Han d'estar dins un <div class="bloc-txt contret>.
+	   
+3.1-BLOCS FLOTANTS
+Un tipus de bloc especial és el de "blocs flotants" (com els del concurs de carpetes: 
+http://www.ub.edu/carpeta/votacions/votacions_2019-20.php).
+N'hi ha de tres mides: gran, mitjà i petit.
+La seva distribució s'adapta a la mida de la pantalla.
+
+4-ELEMENTS DE LA COLUMNA ESQUERRA (aside .nav)
+
+Aquesta columna conté dos blocs:
+
+    * nav #side-nav: conté el menú principal
+    * div .side-bloc: bloc amb informació de contacte
+
+Es situa en diferents llocs depenent de la mida de la pantalla:
+
+    * Columna esquerra <- pantalles grans
+    * Menú horitzontal superior <- pantalles mitjanes. Sols es mostra el menú, no la informació de 
+	   contacte
+    * Menú superior ocultable <- Pantalles petites. També sols es mostra el menú, no la informació 
+	   de contacte
+	   
+El bloc del menú (aside  > nav class="side-nav") tenim pendent de millorar-ne el seu comportament, tant 
+per als menús secundaris, com quan està en format horitzontal. Ja us farem arribar els estils en una 
+segona versió. En aquest sentit, si vosaltres afegiu estils propis o voleu modificar-ne alguns, us 
+recomano que ho feu afegint un altre fitxer d'estils (p.ex.: estils-propis.css), així quan us enviem 
+alguna versió amb millores no els perdreu. En aquest cas, cal que referencieu el nou full d'estils personal
+a totes les pàgines: 
+	<link rel="stylesheet" type="text/css" href="css/estils-propis.css" />
+
+
+5-ELEMENTS DE LA COLUMNA DRETA (aside .aside-2)
+La columna dreta, com he comentat, si no es necessita es pot eliminar sencera.
+
+Però si es necessita, disposa de diversos blocs amb utilitats diferents. Es pot ultilitzar els 
+que es necessiti i en l'ordre que es vulgui:
+
+    * div.destacats: Bàners destacats amb diferents estils de fons (cadascun és un 
+	   <p class="destac01">... fins a "destac06")
+    * div.tinteressa: Llista amb enllaços
+    * div.nuvol: núvol d'etiquetes. És una llista d'enllaços amb tres mides diferents: a.gran, 
+	   a.mitja i a.petita
+    * div.docs-relacionats: amb una llista de documents relacionats amb el contingut de la pàgina. 
+	   Poden ser de diversos tipus:
+        - PDF: li.pdf
+        - Word: li.word
+        - Excel: li.xls
+        - Comprimit: li.zip
+        - Powerpoint: li.ppt
+        - Extern: li.ext
+        - Fitxer genèric o indeterminat: li.file
+        - etc
+
+Cal tenir en compte que, quan es veu des d'un mòbil, la columna dreta es posiciona sota la 
+principal i, en cas de ser-hi, el bloc d'enllaços relacionats passa a primer lloc d'aquesta columna.
+
+6-JAVASCRIPT
+Tant els efectes de fila destacada de les taules com els de blocs deplegables utilitzen els fitxers 
+Javascript
+
+    * js/jquery-1.10.2.js (en realitat, actualment aquest fitxer no el tenim descarregat, sinó 
+	   que el mirem de la web de jquery)
+    * js/jquery.init_estilsub2015.js
+
+En cas de no utilitzar cap d'aquestes característiques, es poden eliminar o comentar del fitxer 
+HTML, així millorarà el temps de càrrega.
+
+6.1 COLORBOX
+També he afegit el Javascript de Colorbox per si es vol activar en alguna imatge 
+(js/jquery.colorbox.js), així com els estils que necessita aquesta aplicació (css/colorbox.css).
+
+Colorbox serveix per afegir la funcionalitat de mostrar les imatges, quan se'n clica la miniatura, 
+en una capa semitransparent per sobre la pàgina, com es pot veure en el segon paràgraf de la 
+columna principal.
+
+Solament és necessari (a part de cridar el js i el css a la capçalera) que hi hagi un fragment de 
+javascript
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".colorbox").colorbox();    // Activa les funcions de 'popup' amb màscara de fons.
+                $(".captures").colorbox({rel:'captures', transition:"none", height:"90%", width:"auto"});
+            });
+        </script>
+
+i, a l'enllaç de la imatge en miniatura (que enllaça a la imatge en mida gran) afegir-hi una classe 
+class="captures". I ja està.
+
+
+7-MILLORES PENDENTS
+Hi ha algunes millores que estem preparant per a una propera versió.
+
+    1-Cal fer algunes millores al bloc del menú.
+    2-FET! També afegirem un bloc de fil d'ariadna (breadcrump) (FET! Mostra: a la pàgina d'1 columna)
+    3-En les pàgines estàtiques normals hi havia una utilitzat de bloc amb 'pestanyes' que tampoc he tingut 
+		temps d'incloure en aquesta versió.
+    4-FET! Taules amb fila destacada directament per CSS, sense JS (FET!)
+	5-Formulari de mostra: els estils no es veuen com s'haurien de veure.
+	6-PHP estàndard per enviar per correu el contingut del formulari.
+	7-Blocs flotants: sembla que hi ha algun problema amb el navegador Explorer (que no s'hauria de 
+	    fer servir...).
+
+Qualsevol cosa que no tingueu clara, no dubteu en preguntar-nos-la a Entorns Web (ep, ara sóm Desenvolupament Web!).
+
+Desenvolupament Web, Universitat de Barcelona.
+Maig de 2019

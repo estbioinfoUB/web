@@ -1,0 +1,55 @@
+Millores:
+
+	
+--------------------------------------------------------------------------
+estils-ub.css v.1.4 - 2029-02-25
+	+ Millores estils menú (opció submenú obert per defecte)
+	+ Millores estils avisos (estil genèric .avis obligatori)
+	
+--------------------------------------------------------------------------
+*.html - 2019-12-20
+	+ Afegeixo full d'estils propi (./css/estils-ub-propis.css)
+--------------------------------------------------------------------------
+estils-ub.css v.1.3 - 2019-10-04
+	+ Blocs 'flex' centrats per defecte
+	+ Bloc amb títol #top03 h2 canviat de posició (margin-top: 32px;)
+
+estils-ub-responsive.css v.1.3 - 2019-10-04
+	+ Millora #top h2 en dispositius petits
+	+ Millora bloc xarxes (.footer .media) en dispositius petits
+	
+--------------------------------------------------------------------------
+estils-ub.css v.1.2 - 2017-06-01
+	+ Millores estils #languages (optimització, posicionament)
+	+ Correcció estil títol .desplegat (imatge fons no es veia)
+	+ Millora fons blocs drets (.tinteressa, .nuvol, .docs-relacionats)
+	+ Afegeixo estils per als /*=Blocs flotants (div.blocs-flotants, ul.flex-container, li.flex-item )
+	+ Afegeixo estils per a l'opció de menú seleccionada ( .menu-nav li.selected )
+	+ Millora .marcador-groc
+	+ Millora blocs desplegables
+	+ Afegeixo botó dret ( .boto-dret )
+	+ Afegeixo Llistes amb grans nombres ( .llista-grans-nombres, ul / dl )
+	
+estils-ub-responsive.css v.1.2 - 2017-06-01
+	+ @media only screen and (max-width: 1280px) { .wrapper { padding: 0; } }
+	+ @media only screen and (max-width: 1280px) { #top { padding: 50px 0 0 9px; } }
+	- @media only screen and (max-width: 1280px) { #top { padding: 50px 0 0 9px; } }
+	+ @media only screen and (max-width: 800px) { #top { padding: 50px 0 0 9px; } }
+	- @media only screen and (max-width: 800px) { #top { padding: 50px 0 0 9px; } }
+	+ @media only screen and (max-width: 800px) { .menu-nav li { min-height: 0; } }
+	++ @media only screen and (max-width: 800px) { .flex-item { height: 120px; } }
+	- @media only screen and (max-width: 640px) { #top { padding: 50px 0 0 9px; } }
+	+ @media only screen and (max-width: 460px) { .wrapper { margin: 0; padding: 0; } }
+	+ @media only screen and (max-width: 460px) { .menu-nav li { min-width: 0; } }
+	+ @media only screen and (max-width: 460px) { .footer .media ul { text-align: unset; } }
+	+ @media only screen and (max-width: 460px) { .footer .media ul li:first-child { padding-top: 0; } }
+	++ @media only screen and (max-width: 460px) { .flex-item { font-size: 1.4em; height: 60px; } }
+
+index.html
+	+ Correcció font imatge peu (../css/css_img/bkgrounds/) 
+--------------------------------------------------------------------------
+estils-ub.css v.1.1 - 2017-04-07, 
+estils-ub-responsive v.1.1 - 2017-04-07
+	Passat per Beautify [http://codebeautify.org/css-beautify-minify]
+	
+--------------------------------------------------------------------------
