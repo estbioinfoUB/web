@@ -2,7 +2,43 @@
 
 ## Current and past Projects
 
-### **Statistical methodologies for clinical and omics data and their applications in health sciences (SAMANTHA)**
+### Methods for the integrative analysis of multimodal data in nutrition using ontologies and biological knowledge
+
+**Type:** Project
+
+**Official Code:** PID2023-148013OB-C22
+
+**Global Amount:** 143750
+
+**Start Date:** 01/09/2024 **End Date:** 31/08/2028
+
+**Keywords:** Clustering, Ontologies, Machine learning, Biological knowledge
+
+**Responsable researcher/s:** Sanchez Pla, Alejandro
+
+**Number or researchers:** 7
+
+------------------------------------------------------------------------
+
+### CIBER Fragilidad y Envejecimiento
+
+**Type:** Project
+
+**Official Code:** CB16/10/00269
+
+**Global Amount:** 290780.93
+
+**Start Date:** 01/01/2017 **End Date:** 31/12/2025
+
+**Keywords:** Patrones alimentarios, Metabolitos, Fragilidad, Fenotipos de fragilidad, Biomarcadores nutricionales
+
+**Responsable researcher/s:** Andres Lacueva, Maria Cristina
+
+**Number or researchers:** 10
+
+------------------------------------------------------------------------
+
+### Statistical methodologies for clinical and omics data and their applications in health sciences (SAMANTHA)
 
 **Tipus de contracte/Programa:** RSOC - Programa estatal de I+D+i orientada a los retos de la sociedad.
 
@@ -16,13 +52,9 @@
 
 **Nombre d'investigadors participants:** 15
 
-**Paraules Clau:**
+------------------------------------------------------------------------
 
-**Codi de projecte/contracte:** 117371 **Ordre:** 003
-
---------------------------------------
-
-### **Food bioactive compounds and prostate cancer risk in the European Prospective Investigation into Cancer and Nutrition (EPIC) study. Scientific bases for future dietary recommendations.**
+### Food bioactive compounds and prostate cancer risk in the European Prospective Investigation into Cancer and Nutrition (EPIC) study. Scientific bases for future dietary recommendations
 
 **Tipus de contracte/Programa:**
 
@@ -40,9 +72,27 @@
 
 **Codi de projecte/contracte:** 117591 **Ordre:** 004
 
---------------------------------------	 	
+------------------------------------------------------------------------
 
-### **Valorización de EGA para la Industria y la Sociedad.(VEIS)**
+### 2021 SGR 01421 GRBIO: GRUP DE RECERCA EN BIOESTADÍSTICA I BIOINFORMÀTICA
+
+Type: Group
+
+Official Code: 2021 SGR 01421
+
+Global Amount: 40000
+
+Start Date: 01/01/2022 End Date: 30/06/2026
+
+Keywords: Bioinformatics, Multivariate analysis, clinical trials
+
+Responsable researcher/s: GOMEZ MELIS, GUADALUPE
+
+Number or researchers: 11
+
+------------------------------------------------------------------------
+
+### Valorización de EGA para la Industria y la Sociedad.(VEIS)
 
 **Tipus de contracte/Programa:**
 
@@ -60,9 +110,9 @@
 
 **Codi de projecte/contracte:** 117369 **Ordre:** 007
 
-------------------------------------------- 	
+------------------------------------------------------------------------
 
-### **Patient Centric Clinical Trial Plattform (EU-PEARL)**
+### Patient Centric Clinical Trial Plattform (EU-PEARL)
 
 **Tipus de contracte/Programa:** 8JTIIMI - HORIZON 2020. JTI INNOVATIVE MEDICINES INITIATIVE (JTI-IMI).
 
@@ -80,9 +130,9 @@
 
 **Codi de projecte/contracte:** 117370 **Ordre:** 008
 
---------------------------------------------
+------------------------------------------------------------------------
 
-### **EOSC-Life: Providing an open collaborative space for digital biology in Europe**
+### EOSC-Life: Providing an open collaborative space for digital biology in Europe
 
 **Tipus de contracte/Programa:**
 
@@ -100,9 +150,9 @@
 
 **Codi de projecte/contracte:** 117372 **Ordre:** 009
 
-----------------------------------------
+------------------------------------------------------------------------
 
-### **2017 SGR 622: Grup de recerca en Bioestadística i Bioinformàtica (GRBIO)**
+### 2017 SGR 622: Grup de recerca en Bioestadística i Bioinformàtica (GRBIO)
 
 **Tipus de contracte/Programa:** SGRC - Ajuts de Suport als Grups de Recerca de Catalunya (SGR)
 
@@ -120,9 +170,9 @@
 
 **Codi de projecte/contracte:** 106261 **Ordre:** 016
 
--------------------
+------------------------------------------------------------------------
 
-### **2014 SGR 464: Grup de recerca en bioestadística i bioinformàtica (GRBIO)**
+### 2014 SGR 464: Grup de recerca en bioestadística i bioinformàtica (GRBIO)
 
 **Grup Consolidat:** 2014 SGR 464 (Generalitat de Catalunya).
 
@@ -138,9 +188,9 @@ Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmo
 
 **Quantitat atorgada:** 63.000 €.
 
---------------------------------
+------------------------------------------------------------------------
 
-### **MTM2015-64465-C2-1-R: Statistical methods for clinical trials, complex censoring schemes and integrative omics data analysis**
+### MTM2015-64465-C2-1-R: Statistical methods for clinical trials, complex censoring schemes and integrative omics data analysis
 
 **Títol:** Statistical methods for clinical trials, complex censoring schemes and integrative omics data analysis
 
@@ -156,7 +206,7 @@ Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmo
 
 **Quantitat atorgada:** 211.100 €.
 
-### **PCIN-2017-076: INTIMIC**
+### PCIN-2017-076: INTIMIC
 
 **Títol**: Metabotipos basados en la dieta y el microbioma para determinar el riesgo cardiometabólico y adaptar estrategias de intervención para mejorar la salud (INTIMIC)
 
@@ -172,7 +222,7 @@ Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmo
 
 **Període**: 01/12/2017 - 30/11/2020
 
-### **PCIN-2015-238: MaPLE**
+### PCIN-2015-238: MaPLE
 
 **Títol**: Microbioma sanguíneo e intestinal para el estudio del efecto de un patrón dietético rico en polifenoles sobre la permeabilidad intestinal de ancianos (MaPLE)
 
@@ -188,7 +238,7 @@ Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmo
 
 **Període**: 03/01/2016 - 31/12/2018
 
-### **PCIN-2015-229: NUTRICOG**
+### PCIN-2015-229: NUTRICOG
 
 **Títol:** Identificación de moduladores dietéticos del envejecimiento cognitivo y plasticidad cerebral, y evidencia del concepto de eficacia en la prevención/reversión del declive cognitivo
 
@@ -204,7 +254,7 @@ Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmo
 
 **Període**: 03/01/2016 - 31/12/2018.
 
-### **EIT/HEALTH/SGA2016/01: COOK2HEALTH**
+### EIT/HEALTH/SGA2016/01: COOK2HEALTH
 
 **Finançat per:** EUUN Unió Europea.
 
@@ -222,7 +272,7 @@ Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmo
 
 **Participant:** Alex Sánchez, Esteban Vegas, Francesc Carmona, Antoni Miñarro
 
-### **MTM2015-69068-REDT: BIOSTATNET**
+### MTM2015-69068-REDT: BIOSTATNET
 
 **Descripció**: Xarxa Nacional de Bioestadística (BIOSTATNET) creada en el marc del Programa Estatal de Investigación Científica y Técnica de Excelencia, Subprograma Estatal de Generación de Conocimiento del Ministerio de Economia y Competitividad
 
@@ -234,9 +284,9 @@ Arenas Sola, Concepción; Briansó Castilla, Ferran; Calvo Llorca, Miguel; Carmo
 
 **Periode**: Gener 2016 - Desembre 2017.
 
-### Related Research Groups
+## Associated Research Groups
 
-Our group interacts in different ways with other research groups. While we are not a "Consolidated Research Group" of the Generalitat de Catalunya, we work with two of them.
+Our group interacts in different ways with other research groups. While we are not a "Consolidated Research Group" of the Generalitat de Catalunya, we have traditionally been part of two of them (only one researcher per SGR as required).
 
 -   Some of our members belong to GRBio, [Grup de Recerca en Bioestadística i Bioinformàtica](http://grbio.upc.edu), a consolidated research group of the Generalitat de Catalunya, with whom we share orientations and research interests.
 

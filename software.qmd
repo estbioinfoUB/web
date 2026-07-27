@@ -4,11 +4,19 @@
 
 As part of our research we develop distinct type of applications, most of them using R. These can be accessed through our personal github sites and also as public shiny applications that we provide through the GrBio web server
 
-### **Software in github**
+### Bioconductor packages
 
--   [Alex Sánchez github site](https://github.com/alexsanchezpla/)
+- [goProfiles](https://bioconductor.org/packages/release/bioc/html/goProfiles.html)
 
--   Estbioinfo github
+- [goSorensen](https://bioconductor.org/packages/release/bioc/html/goSorensen.html)
+
+- [lheuristic](https://github.com/ASPresearch/Lheuristic) *Undergoing submission*
+
+### Github repositories
+
+- [Estbioinfo github site](https://github.com/orgs/estbioinfoUB)
+
+- [Alex Sanchez's github](https://github.com/orgs/alexsanchezpla)
 
 ### **Shiny Applications**
 

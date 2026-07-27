@@ -1,0 +1,48 @@
+# Group members
+- name: Alex Sanchez
+  role: Group Leader. Prof. Catedràtic U.
+  photo: images/members/alex.png
+
+- name: Ferran Reverter
+  role: Prof. Agregat
+  photo: images/members/ferran.png
+
+- name: Esteban Vegas
+  role: Prof. Titular U.
+  photo: images/members/esteban.png
+
+- name: Antonio Miñarro
+  role: Prof. Titular U.
+  photo: images/members/antonio.png
+
+- name: Francesc Carmona
+  role: Prof. Titular U.
+  photo: images/members/francesc.png
+
+- name: Marta Cubedo
+  role: Prof. Titular U.
+  photo: images/members/marta.png
+
+# External collaborators
+
+- name: Anna Guadall
+  role: Nutrimetabolomics research group, UB
+  category: External Collaborator
+
+- name: Berta Miró
+  role: Vall d'Hebron Institut de Recerca
+  category: External Collaborator
+
+# PhD Students
+
+- name: Sara Sanchez
+  category: PhD Student
+
+# Former members
+
+- name: Pol Castellano
+  role: currently at Duke University
+  category: Former
+
+- name: Josep Lluis Mosquera
+  category: Former

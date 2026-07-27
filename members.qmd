@@ -1,54 +1,57 @@
 ---
 title: "Research Group Members"
-output:
-  html_document:
-    toc: true
-    code_folding: true
-    embed_resources: false
+format:
+  html:
+    toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
-## Current and former group members
+## Current and Former Group Members
 
-### Group members
+```{r}
+library(yaml)
+members <- yaml::read_yaml("data/members.yml")
 
-- Alex Sanchez (Group Leader. Prof. Catedràtic U.)
-
-- Ferran Reverter (Prof. Agregat)
-
-- Esteban Vegas (Prof Titular U.)
-
-- Antonio Miñarro (Prof Titular U.)
-
-- Francesc Carmona (Prof. Titular U.)
-
-- Marta Cubedo (Prof Titular U.)
-
-### External collaborators
-
-- Anna Guadall PhD. (Nutrimetabolomics research group, UB)
-
-- Berta Miró Ph.D (Vall d'Hebron Institut de Recerca)
-
-### Ph. D. Students
-
-- Ferran Briansó
-
-- Angel Blanco
-
-- Pablo Flores
-
-### Former Group members
-
-- Pol Castellano (currently at Duke University)
-
-- Josep Lluis Mosquera 
-
-## Gallery
-
-```{r echo=FALSE, fig.align='center', fig.cap='Our group in 2018'}
-knitr::include_graphics("images/FotoEstBioinfo-2018-3.jpg")
+# Dividim per categories (si no hi ha category → "Group Member")
+group_members <- Filter(function(m) is.null(m$category), members)
+external_collab <- Filter(function(m) !is.null(m$category) && m$category == "External Collaborator", members)
+phd_students   <- Filter(function(m) !is.null(m$category) && m$category == "PhD Student", members)
+former         <- Filter(function(m) !is.null(m$category) && m$category == "Former", members)
 ```
 
-```{r echo=FALSE, fig.align='center', , fig.cap='Our group in 2011'}
-knitr::include_graphics("images/Diapositiva1.PNG")
-```
+<div class="row row-cols-1 row-cols-md-3 g-4"> 
+
+```{r, results='asis'} 
+for (m in group_members) { cat(sprintf(' <div class="col"> <div class="card h-100 shadow-sm"> <img src="%s" class="card-img-top" alt="%s"> <div class="card-body"> <h5 class="card-title">%s</h5> <p class="card-text"><em>%s</em></p> </div> </div> </div>', m$photo, m$name, m$name, m$role)) } 
+``` 
+</div>
+
+### External Collaborators
+
+<ul> 
+```{r, results='asis'} 
+for (m in external_collab) { cat(sprintf("<li>%s — %s</li>", m$name, m$role)) } 
+``` 
+</ul>
+
+### PhD Students
+
+<ul> 
+```{r, results='asis'} 
+for (m in phd_students) { cat(sprintf("<li>%s</li>", m$name)) } 
+``` 
+</ul>
+
+### Former Group Members
+
+<ul> 
+
+```{r, results='asis'} 
+for (m in former) { if (!is.null(m$role)) { cat(sprintf("<li>%s (%s)</li>", m$name, m$role)) } else { cat(sprintf("<li>%s</li>", m$name)) } } 
+``` 
+</ul> 
+
+
