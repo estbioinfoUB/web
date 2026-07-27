@@ -1,6 +1,6 @@
 # Research
 
-## Current and past Projects
+## Current Projects
 
 ### Methods for the integrative analysis of multimodal data in nutrition using ontologies and biological knowledge
 
@@ -37,6 +37,8 @@
 **Number or researchers:** 10
 
 ------------------------------------------------------------------------
+
+## Past projects
 
 ### Statistical methodologies for clinical and omics data and their applications in health sciences (SAMANTHA)
 

@@ -23,22 +23,38 @@
   role: Prof. Titular U.
   photo: images/members/marta.png
 
+- name: Maria Teresa Pay
+  role: Prof. Agregat
+  photo: images/members/foto_mtpay.jpeg.webp
+- name: Diego Garrido
+  role: Prof. Agregat
+  photo: images/members/dgm-691x1024.jpg.webp
+  
+- name: Santiago Ríos
+  role: Prof. Agregat
+  photo: images/members/foto_SantiRios-768x1024.jpg.webp
+
+
+
 # External collaborators
 
-- name: Anna Guadall
-  role: Nutrimetabolomics research group, UB
-  category: External Collaborator
-
 - name: Berta Miró
-  role: Vall d'Hebron Institut de Recerca
+  role: Vall d'Hebron Institut d'Oncologia Recerca
   category: External Collaborator
 
 # PhD Students
 
 - name: Sara Sanchez
   category: PhD Student
+  
+- name: Carlota Ruíz de Porras
+  category: PhD Student
 
 # Former members
+
+- name: Anna Guadall
+  role: currently at Vall d'Hebron Institut de Recerca
+  category: External Collaborator
 
 - name: Pol Castellano
   role: currently at Duke University
